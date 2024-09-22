@@ -16,7 +16,6 @@ int main(){
 			else left-=max(0.,ceil((t*2+1-sqrt((1+t*2)*(1+t*2)+8LL*(1LL*a[i]*t-v[i])))/2));
 			if(left<0)break;
 		}
-		cout<<t<<' '<<left<<'\n';
 		if(left<0)ans+=bs;
 		bs/=2;
 	}
