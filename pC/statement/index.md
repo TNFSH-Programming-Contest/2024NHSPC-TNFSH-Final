@@ -1,10 +1,4 @@
-# TODO: 題目名稱
-
-<!-- \begin{figure}[h]
-\centering
-\includegraphics[width=2in]{TODO.jpg}
-\caption{TODO: 圖片說明}
-\end{figure} -->
+# 神魔之塔
 
 TODO: 題目敘述
 
