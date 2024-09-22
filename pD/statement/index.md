@@ -4,7 +4,7 @@
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=2in]{image.jpg}
+\includegraphics[width=4in]{image.jpg}
 \caption{菜寮}
 \end{figure}
 
@@ -37,8 +37,14 @@ Angus 在菜寮種的菜可以平均劃分為 $n$ 個區域種植不同的蔬菜
 
 \clearpage
 
-## 範例輸入
+## 範例輸入1
 \testfile{0-01.in}
 
-## 範例輸出
+## 範例輸出1
 \testfile{0-01.out}
+
+## 範例輸入2
+\testfile{0-02.in}
+
+## 範例輸出2
+\testfile{0-02.out}
