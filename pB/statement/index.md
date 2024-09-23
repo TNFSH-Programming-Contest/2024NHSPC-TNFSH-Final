@@ -1,12 +1,6 @@
 # TODO: 題目名稱
 
-<!-- \begin{figure}[h]
-\centering
-\includegraphics[width=2in]{TODO.jpg}
-\caption{TODO: 圖片說明}
-\end{figure} -->
 
-TODO: 題目敘述
 
 \clearpage
 
