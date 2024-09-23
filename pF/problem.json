@@ -4,7 +4,7 @@
 	"name": "ShortProblemAgain",
 	"title": "又一個簡短的問題",
 	"memory_limit": 512,
-	"time_limit": 1.0,
+	"time_limit": 2.0,
 	"type": "Batch",
 	"description": "",
 	"tps_web_url": "",

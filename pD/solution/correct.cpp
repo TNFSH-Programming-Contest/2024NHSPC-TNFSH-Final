@@ -9,7 +9,7 @@ int main(){
 	cin>>n>>c;
 	for(int i=0;i<n;i++)cin>>a[i];
 	for(int i=0;i<n;i++)cin>>v[i];
-	int bs=(1<<30),ans=0;
+	int bs=(1<<29),ans=0;
 	while(bs){
 		long long int left=c,t=ans+bs;
 		for(int i=0;i<n;i++){

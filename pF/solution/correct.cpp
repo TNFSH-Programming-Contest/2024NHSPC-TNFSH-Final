@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 const long long int mod=1e12+39;
-map<long long int,long long int>mp;
+unordered_map<long long int,long long int,hash<long long int>>mp;
 short int k[(int)1e7+20];
 long long int fp(long long int x,long long int y){
 	if(y==0)return 1;
@@ -22,15 +22,14 @@ int main(){
 		mp[now]=i;
 		now=now*2%mod;
 	}
-	long long int base=now;
-	now=1;
+	long long int base=fp(now,mod-2);
+	long long int goal=n;
 	for(long long int i=0;i<(1<<20);i++){
-		long long int goal=(__int128_t)n*fp(now,mod-2)%mod;
 		if(mp.count(goal)){
 			ans=(i<<20|mp[goal]);
 			break;
 		}
-		now=(__int128_t)now*base%mod;
+		goal=(__int128_t)goal*base%mod;
 	}
 	if(ans==-1){
 		cout<<ans;
