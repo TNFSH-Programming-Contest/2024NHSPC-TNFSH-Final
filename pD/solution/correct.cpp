@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-int a[(int)1e6+5];
-long long int v[(int)1e6+5];
+int a[(int)5e5+5];
+long long int v[(int)5e+5];
 int main(){
 	cin.tie(0)->sync_with_stdio(0);
 	int n;
@@ -14,7 +14,7 @@ int main(){
 		long long int left=c,t=ans+bs;
 		for(int i=0;i<n;i++){
 			if((1+t*2)*(1+t*2)+8LL*(1LL*a[i]*t-v[i])<0)left=-1;
-			else left-=max(0.,ceil((t*2+1-sqrt((1+t*2)*(1+t*2)+8LL*(1LL*a[i]*t-v[i])))/2));
+			else left-=max(0.L,ceil((t*2+1-sqrt((long double)(1+t*2)*(1+t*2)+8LL*(1LL*a[i]*t-v[i])))/2));
 			if(left<0)break;
 		}
 		if(left<0)ans+=bs;
