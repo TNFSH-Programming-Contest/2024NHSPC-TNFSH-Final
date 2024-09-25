@@ -31,7 +31,7 @@ int main(){
 			}
         }
 		queue<pair<int,int>>qu;//store the (item_id,way_id) which can be maken
-		set<pair<int,int>>se;//store the (dis,item_id) whose shortest time is determined and can do Dijkstra
+		set<pair<long long int,int>>se;//store the (dis,item_id) whose shortest time is determined and can do Dijkstra
 		for(int i=1;i<=n;i++)for(int j=1;j<=way[i];j++)if(!in[i][j])qu.push({i,j});
 		while(se.size()||qu.size()){
 			while(qu.size()){
