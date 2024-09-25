@@ -14,10 +14,10 @@
 | memory_limit |  512 | 512 | 512 | 128 | 512 | 512 |
 | time_limit |  1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2.0 |
 | has_checker |  False | False | False | False | False | False |
-| gen | [:x:](pA/gen)<br>[gen.cpp](pA/gen/gen.cpp)<br>[data](pA/gen/data) | [:x:](pB/gen)<br>[gen.cpp](pB/gen/gen.cpp)<br>[data](pB/gen/data) | [:x:](pC/gen)<br>[gen.cpp](pC/gen/gen.cpp)<br>[data](pC/gen/data) | [:white_check_mark:](pD/gen) | [:x:](pE/gen)<br>[gen.cpp](pE/gen/gen.cpp)<br>[data](pE/gen/data) | [:white_check_mark:](pF/gen) |
+| gen | [:x:](pA/gen)<br>[gen.cpp](pA/gen/gen.cpp)<br>[data](pA/gen/data) | [:white_check_mark:](pB/gen) | [:x:](pC/gen)<br>[gen.cpp](pC/gen/gen.cpp)<br>[data](pC/gen/data) | [:white_check_mark:](pD/gen) | [:x:](pE/gen)<br>[gen.cpp](pE/gen/gen.cpp)<br>[data](pE/gen/data) | [:white_check_mark:](pF/gen) |
 | solution | [:x:](pA/solution)<br>[correct.cpp](pA/solution/correct.cpp) | [:white_check_mark:](pB/solution) | [:white_check_mark:](pC/solution) | [:white_check_mark:](pD/solution) | [:white_check_mark:](pE/solution) | [:white_check_mark:](pF/solution) |
 | validator | [:x:](pA/validator)<br>[validator.cpp](pA/validator/validator.cpp) | [:x:](pB/validator)<br>[validator.cpp](pB/validator/validator.cpp) | [:x:](pC/validator)<br>[validator.cpp](pC/validator/validator.cpp) | [:x:](pD/validator)<br>[validator.cpp](pD/validator/validator.cpp) | [:x:](pE/validator)<br>[validator.cpp](pE/validator/validator.cpp) | [:x:](pF/validator)<br>[validator.cpp](pF/validator/validator.cpp) |
-| subtasks.json<br>global_validators |  [:white_check_mark:](pA/subtasks.json) | [:white_check_mark:](pB/subtasks.json) | [:white_check_mark:](pC/subtasks.json) | [:warning:](pD/subtasks.json) Not set | [:white_check_mark:](pE/subtasks.json) | [:warning:](pF/subtasks.json) Not set |
+| subtasks.json<br>global_validators |  [:white_check_mark:](pA/subtasks.json) | [:warning:](pB/subtasks.json) Not set | [:white_check_mark:](pC/subtasks.json) | [:warning:](pD/subtasks.json) Not set | [:white_check_mark:](pE/subtasks.json) | [:warning:](pF/subtasks.json) Not set |
 | tests | [:x:](pA/tests)<br>[Auto build disabled](pA/gen/DISABLE_AUTO_BUILD) | [:x:](pB/tests)<br>[Auto build disabled](pB/gen/DISABLE_AUTO_BUILD) | [:x:](pC/tests)<br>[Auto build disabled](pC/gen/DISABLE_AUTO_BUILD) | [:white_check_mark:](pD/tests)<br>[Auto build disabled](pD/gen/DISABLE_AUTO_BUILD) | [:x:](pE/tests)<br>[Auto build disabled](pE/gen/DISABLE_AUTO_BUILD) | [:white_check_mark:](pF/tests)<br>[Auto build disabled](pF/gen/DISABLE_AUTO_BUILD) |
 | statement/index.md | [:x:](pA/statement/index.md) | [:white_check_mark:](pB/statement/index.md) | [:white_check_mark:](pC/statement/index.md) | [:white_check_mark:](pD/statement/index.md) | [:x:](pE/statement/index.md) | [:white_check_mark:](pF/statement/index.md) |
 | statement/index.pdf | [:x:](pA/statement/index.pdf)<br>[Auto build disabled](pA/statement/DISABLE_AUTO_BUILD) | [:white_check_mark:](pB/statement/index.pdf)<br>[Auto build disabled](pB/statement/DISABLE_AUTO_BUILD) | [:x:](pC/statement/index.pdf)<br>[Auto build disabled](pC/statement/DISABLE_AUTO_BUILD) | [:white_check_mark:](pD/statement/index.pdf)<br>[Auto build disabled](pD/statement/DISABLE_AUTO_BUILD) | [:x:](pE/statement/index.pdf)<br>[Auto build disabled](pE/statement/DISABLE_AUTO_BUILD) | [:white_check_mark:](pF/statement/index.pdf)<br>[Auto build disabled](pF/statement/DISABLE_AUTO_BUILD) |
@@ -30,7 +30,7 @@
 | | 1 | 2 | 3 | 4 | 5 | 6 |
 | --- | --- | --- | --- | --- | --- | --- |
 | A | 100<br>無額外限制 |
-| B | 100<br>無額外限制 |
+| B | 6<br>所有 $a_{i,j}=b_{i,j}=0$ | 10<br>所有 $a_{i,j}=0$ | 10<br>所有 $a_{i,j}=1,b_{i,j}=0$ | 14<br>所有 $a_{i,j}=1$ | 20<br>所有 $way_i=1$ | 40<br>無額外限制 |
 | C | 100<br>無額外限制 |
 | D | 18<br>$c=0$ | 24<br>$c\le 10^6$ | 12<br>$c=10^{18}$ 且所有 $a_i=1$ | 16<br>$c=10^{18}$ | 10<br>$n\le 3000$ | 20<br>無額外限制 |
 | E | 100<br>無額外限制 |
@@ -43,97 +43,127 @@
 
 | score | count | groups |
 | --- | --- | --- |
-| 10 | 2 | (D5) (F5) |
-| 20 | 3 | (D5, F5) (D6) (F2) |
-| 22 | 2 | (D3, D5) (D3, F5) |
-| 25 | 3 | (D5, F1) (F1, F5) (F3) |
-| 26 | 2 | (D4, D5) (D4, F5) |
-| 28 | 3 | (D3, D4) (D1, D5) (D1, F5) |
-| 30 | 6 | (D1, D3) (D5, D6) (D6, F5) (D5, F2) (F2, F5) (F4) |
-| 32 | 3 | (D3, D5, F5) (D3, D6) (D3, F2) |
-| 34 | 3 | (D1, D4) (D2, D5) (D2, F5) |
-| 35 | 5 | (D5, F1, F5) (D6, F1) (F1, F2) (D5, F3) (F3, F5) |
-| 36 | 4 | (D4, D5, F5) (D4, D6) (D4, F2) (D2, D3) |
-| 37 | 3 | (D3, D5, F1) (D3, F1, F5) (D3, F3) |
-| 38 | 5 | (D3, D4, D5) (D3, D4, F5) (D1, D5, F5) (D1, D6) (D1, F2) |
-| 40 | 9 | (D1, D3, D5) (D1, D3, F5) (D5, D6, F5) (D5, F2, F5) (D6, F2) (D2, D4) (F1, F3) (D5, F4) (F4, F5) |
-| 41 | 3 | (D4, D5, F1) (D4, F1, F5) (D4, F3) |
-| 42 | 6 | (D3, D5, D6) (D3, D6, F5) (D3, D5, F2) (D3, F2, F5) (D1, D2) (D3, F4) |
-| 43 | 4 | (D3, D4, F1) (D1, D5, F1) (D1, F1, F5) (D1, F3) |
-| 44 | 5 | (D1, D4, D5) (D1, D4, F5) (D2, D5, F5) (D2, D6) (D2, F2) |
-| 45 | 9 | (D1, D3, F1) (D5, D6, F1) (D6, F1, F5) (D5, F1, F2) (F1, F2, F5) (D5, F3, F5) (D6, F3) (F2, F3) (F1, F4) |
-| 46 | 8 | (D1, D3, D4) (D4, D5, D6) (D4, D6, F5) (D4, D5, F2) (D4, F2, F5) (D2, D3, D5) (D2, D3, F5) (D4, F4) |
-| 47 | 4 | (D3, D6, F1) (D3, F1, F2) (D3, D5, F3) (D3, F3, F5) |
-| 48 | 7 | (D3, D4, D6) (D1, D5, D6) (D1, D6, F5) (D3, D4, F2) (D1, D5, F2) (D1, F2, F5) (D1, F4) |
-| 49 | 4 | (D1, D4, F1) (D2, D5, F1) (D2, F1, F5) (D2, F3) |
-| 50 | 11 | (D1, D3, D6) (D1, D3, F2) (D5, D6, F2) (D6, F2, F5) (D2, D4, D5) (D2, D4, F5) (D5, F1, F3) (F1, F3, F5) (D5, F4, F5) (D6, F4) (F2, F4) |
-| 51 | 5 | (D4, D6, F1) (D4, F1, F2) (D2, D3, F1) (D4, D5, F3) (D4, F3, F5) |
-| 52 | 7 | (D3, D6, F2) (D2, D3, D4) (D1, D2, D5) (D1, D2, F5) (D3, F1, F3) (D3, D5, F4) (D3, F4, F5) |
-| 53 | 5 | (D1, D6, F1) (D1, F1, F2) (D3, D4, F3) (D1, D5, F3) (D1, F3, F5) |
-| 54 | 8 | (D1, D4, D6) (D1, D4, F2) (D1, D2, D3) (D2, D5, D6) (D2, D6, F5) (D2, D5, F2) (D2, F2, F5) (D2, F4) |
-| 55 | 10 | (D6, F1, F2) (D2, D4, F1) (D1, D3, F3) (D5, D6, F3) (D6, F3, F5) (D5, F2, F3) (F2, F3, F5) (D5, F1, F4) (F1, F4, F5) (F3, F4) |
-| 56 | 6 | (D4, D6, F2) (D2, D3, D6) (D2, D3, F2) (D4, F1, F3) (D4, D5, F4) (D4, F4, F5) |
-| 57 | 4 | (D1, D2, F1) (D3, D6, F3) (D3, F2, F3) (D3, F1, F4) |
-| 58 | 6 | (D1, D6, F2) (D1, D2, D4) (D1, F1, F3) (D3, D4, F4) (D1, D5, F4) (D1, F4, F5) |
-| 59 | 5 | (D2, D6, F1) (D2, F1, F2) (D1, D4, F3) (D2, D5, F3) (D2, F3, F5) |
-| 60 | 9 | (D2, D4, D6) (D2, D4, F2) (D6, F1, F3) (F1, F2, F3) (D1, D3, F4) (D5, D6, F4) (D6, F4, F5) (D5, F2, F4) (F2, F4, F5) |
-| 61 | 4 | (D4, D6, F3) (D4, F2, F3) (D2, D3, F3) (D4, F1, F4) |
-| 62 | 4 | (D1, D2, D6) (D1, D2, F2) (D3, D6, F4) (D3, F2, F4) |
-| 63 | 3 | (D1, D6, F3) (D1, F2, F3) (D1, F1, F4) |
-| 64 | 5 | (D2, D6, F2) (D2, F1, F3) (D1, D4, F4) (D2, D5, F4) (D2, F4, F5) |
-| 65 | 6 | (D6, F2, F3) (D2, D4, F3) (D6, F1, F4) (F1, F2, F4) (D5, F3, F4) (F3, F4, F5) |
-| 66 | 3 | (D4, D6, F4) (D4, F2, F4) (D2, D3, F4) |
-| 67 | 2 | (D1, D2, F3) (D3, F3, F4) |
-| 68 | 2 | (D1, D6, F4) (D1, F2, F4) |
-| 69 | 3 | (D2, D6, F3) (D2, F2, F3) (D2, F1, F4) |
-| 70 | 3 | (D6, F2, F4) (D2, D4, F4) (F1, F3, F4) |
-| 74 | 2 | (D2, D6, F4) (D2, F2, F4) |
-| 75 | 2 | (D6, F3, F4) (F2, F3, F4) |
-| 100 | 4 | (A1) (B1) (C1) (E1) |
-| 110 | 8 | (A1, D5) (A1, F5) (B1, D5) (B1, F5) (C1, D5) (C1, F5) (D5, E1) (E1, F5) |
-| 112 | 4 | (A1, D3) (B1, D3) (C1, D3) (D3, E1) |
-| 115 | 4 | (A1, F1) (B1, F1) (C1, F1) (E1, F1) |
-| 116 | 4 | (A1, D4) (B1, D4) (C1, D4) (D4, E1) |
-| 118 | 4 | (A1, D1) (B1, D1) (C1, D1) (D1, E1) |
-| 120 | 12 | (A1, D5, F5) (A1, D6) (A1, F2) (B1, D5, F5) (B1, D6) (B1, F2) (C1, D5, F5) (C1, D6) (C1, F2) (D5, E1, F5) (D6, E1) (E1, F2) |
-| 122 | 8 | (A1, D3, D5) (A1, D3, F5) (B1, D3, D5) (B1, D3, F5) (C1, D3, D5) (C1, D3, F5) (D3, D5, E1) (D3, E1, F5) |
-| 124 | 4 | (A1, D2) (B1, D2) (C1, D2) (D2, E1) |
-| 125 | 12 | (A1, D5, F1) (A1, F1, F5) (A1, F3) (B1, D5, F1) (B1, F1, F5) (B1, F3) (C1, D5, F1) (C1, F1, F5) (C1, F3) (D5, E1, F1) (E1, F1, F5) (E1, F3) |
-| 126 | 8 | (A1, D4, D5) (A1, D4, F5) (B1, D4, D5) (B1, D4, F5) (C1, D4, D5) (C1, D4, F5) (D4, D5, E1) (D4, E1, F5) |
-| 127 | 4 | (A1, D3, F1) (B1, D3, F1) (C1, D3, F1) (D3, E1, F1) |
-| 128 | 12 | (A1, D3, D4) (A1, D1, D5) (A1, D1, F5) (B1, D3, D4) (B1, D1, D5) (B1, D1, F5) (C1, D3, D4) (C1, D1, D5) (C1, D1, F5) (D3, D4, E1) (D1, D5, E1) (D1, E1, F5) |
-| 130 | 24 | (A1, D1, D3) (A1, D5, D6) (A1, D6, F5) (A1, D5, F2) (A1, F2, F5) (A1, F4) (B1, D1, D3) (B1, D5, D6) (B1, D6, F5) (B1, D5, F2) (B1, F2, F5) (B1, F4) (C1, D1, D3) (C1, D5, D6) (C1, D6, F5) (C1, D5, F2) (C1, F2, F5) (C1, F4) (D1, D3, E1) (D5, D6, E1) (D6, E1, F5) (D5, E1, F2) (E1, F2, F5) (E1, F4) |
-| 131 | 4 | (A1, D4, F1) (B1, D4, F1) (C1, D4, F1) (D4, E1, F1) |
-| 132 | 8 | (A1, D3, D6) (A1, D3, F2) (B1, D3, D6) (B1, D3, F2) (C1, D3, D6) (C1, D3, F2) (D3, D6, E1) (D3, E1, F2) |
-| 133 | 4 | (A1, D1, F1) (B1, D1, F1) (C1, D1, F1) (D1, E1, F1) |
-| 134 | 12 | (A1, D1, D4) (A1, D2, D5) (A1, D2, F5) (B1, D1, D4) (B1, D2, D5) (B1, D2, F5) (C1, D1, D4) (C1, D2, D5) (C1, D2, F5) (D1, D4, E1) (D2, D5, E1) (D2, E1, F5) |
-| 135 | 16 | (A1, D6, F1) (A1, F1, F2) (A1, D5, F3) (A1, F3, F5) (B1, D6, F1) (B1, F1, F2) (B1, D5, F3) (B1, F3, F5) (C1, D6, F1) (C1, F1, F2) (C1, D5, F3) (C1, F3, F5) (D6, E1, F1) (E1, F1, F2) (D5, E1, F3) (E1, F3, F5) |
-| 136 | 12 | (A1, D4, D6) (A1, D4, F2) (A1, D2, D3) (B1, D4, D6) (B1, D4, F2) (B1, D2, D3) (C1, D4, D6) (C1, D4, F2) (C1, D2, D3) (D4, D6, E1) (D4, E1, F2) (D2, D3, E1) |
-| 137 | 4 | (A1, D3, F3) (B1, D3, F3) (C1, D3, F3) (D3, E1, F3) |
-| 138 | 8 | (A1, D1, D6) (A1, D1, F2) (B1, D1, D6) (B1, D1, F2) (C1, D1, D6) (C1, D1, F2) (D1, D6, E1) (D1, E1, F2) |
-| 139 | 4 | (A1, D2, F1) (B1, D2, F1) (C1, D2, F1) (D2, E1, F1) |
-| 140 | 20 | (A1, D6, F2) (A1, D2, D4) (A1, F1, F3) (A1, D5, F4) (A1, F4, F5) (B1, D6, F2) (B1, D2, D4) (B1, F1, F3) (B1, D5, F4) (B1, F4, F5) (C1, D6, F2) (C1, D2, D4) (C1, F1, F3) (C1, D5, F4) (C1, F4, F5) (D6, E1, F2) (D2, D4, E1) (E1, F1, F3) (D5, E1, F4) (E1, F4, F5) |
-| 141 | 4 | (A1, D4, F3) (B1, D4, F3) (C1, D4, F3) (D4, E1, F3) |
-| 142 | 8 | (A1, D1, D2) (A1, D3, F4) (B1, D1, D2) (B1, D3, F4) (C1, D1, D2) (C1, D3, F4) (D1, D2, E1) (D3, E1, F4) |
-| 143 | 4 | (A1, D1, F3) (B1, D1, F3) (C1, D1, F3) (D1, E1, F3) |
-| 144 | 8 | (A1, D2, D6) (A1, D2, F2) (B1, D2, D6) (B1, D2, F2) (C1, D2, D6) (C1, D2, F2) (D2, D6, E1) (D2, E1, F2) |
-| 145 | 12 | (A1, D6, F3) (A1, F2, F3) (A1, F1, F4) (B1, D6, F3) (B1, F2, F3) (B1, F1, F4) (C1, D6, F3) (C1, F2, F3) (C1, F1, F4) (D6, E1, F3) (E1, F2, F3) (E1, F1, F4) |
-| 146 | 4 | (A1, D4, F4) (B1, D4, F4) (C1, D4, F4) (D4, E1, F4) |
-| 148 | 4 | (A1, D1, F4) (B1, D1, F4) (C1, D1, F4) (D1, E1, F4) |
-| 149 | 4 | (A1, D2, F3) (B1, D2, F3) (C1, D2, F3) (D2, E1, F3) |
-| 150 | 8 | (A1, D6, F4) (A1, F2, F4) (B1, D6, F4) (B1, F2, F4) (C1, D6, F4) (C1, F2, F4) (D6, E1, F4) (E1, F2, F4) |
-| 154 | 4 | (A1, D2, F4) (B1, D2, F4) (C1, D2, F4) (D2, E1, F4) |
-| 155 | 4 | (A1, F3, F4) (B1, F3, F4) (C1, F3, F4) (E1, F3, F4) |
-| 200 | 6 | (A1, B1) (A1, C1) (B1, C1) (A1, E1) (B1, E1) (C1, E1) |
-| 210 | 12 | (A1, B1, D5) (A1, B1, F5) (A1, C1, D5) (A1, C1, F5) (B1, C1, D5) (B1, C1, F5) (A1, D5, E1) (A1, E1, F5) (B1, D5, E1) (B1, E1, F5) (C1, D5, E1) (C1, E1, F5) |
-| 212 | 6 | (A1, B1, D3) (A1, C1, D3) (B1, C1, D3) (A1, D3, E1) (B1, D3, E1) (C1, D3, E1) |
-| 215 | 6 | (A1, B1, F1) (A1, C1, F1) (B1, C1, F1) (A1, E1, F1) (B1, E1, F1) (C1, E1, F1) |
-| 216 | 6 | (A1, B1, D4) (A1, C1, D4) (B1, C1, D4) (A1, D4, E1) (B1, D4, E1) (C1, D4, E1) |
-| 218 | 6 | (A1, B1, D1) (A1, C1, D1) (B1, C1, D1) (A1, D1, E1) (B1, D1, E1) (C1, D1, E1) |
-| 220 | 12 | (A1, B1, D6) (A1, B1, F2) (A1, C1, D6) (A1, C1, F2) (B1, C1, D6) (B1, C1, F2) (A1, D6, E1) (A1, E1, F2) (B1, D6, E1) (B1, E1, F2) (C1, D6, E1) (C1, E1, F2) |
-| 224 | 6 | (A1, B1, D2) (A1, C1, D2) (B1, C1, D2) (A1, D2, E1) (B1, D2, E1) (C1, D2, E1) |
-| 225 | 6 | (A1, B1, F3) (A1, C1, F3) (B1, C1, F3) (A1, E1, F3) (B1, E1, F3) (C1, E1, F3) |
-| 230 | 6 | (A1, B1, F4) (A1, C1, F4) (B1, C1, F4) (A1, E1, F4) (B1, E1, F4) (C1, E1, F4) |
-| 300 | 4 | (A1, B1, C1) (A1, B1, E1) (A1, C1, E1) (B1, C1, E1) |
+| 10 | 4 | (B2) (B3) (D5) (F5) |
+| 16 | 5 | (B1, B2) (B1, B3) (B1, D5) (B1, F5) (D4) |
+| 18 | 2 | (B1, D3) (D1) |
+| 20 | 10 | (B2, B3) (B2, D5) (B3, D5) (B2, F5) (B3, F5) (D5, F5) (B1, B4) (B5) (D6) (F2) |
+| 22 | 5 | (B2, D3) (B3, D3) (D3, D5) (D3, F5) (B1, D4) |
+| 24 | 6 | (B2, B4) (B3, B4) (B4, D5) (B4, F5) (B1, D1) (D2) |
+| 25 | 5 | (B2, F1) (B3, F1) (D5, F1) (F1, F5) (F3) |
+| 26 | 14 | (B1, B2, B3) (B1, B2, D5) (B1, B3, D5) (B1, B2, F5) (B1, B3, F5) (B1, D5, F5) (B4, D3) (B2, D4) (B3, D4) (D4, D5) (D4, F5) (B1, B5) (B1, D6) (B1, F2) |
+| 28 | 9 | (B1, B2, D3) (B1, B3, D3) (B1, D3, D5) (B1, D3, F5) (D3, D4) (B2, D1) (B3, D1) (D1, D5) (D1, F5) |
+| 30 | 24 | (B2, B3, D5) (B2, B3, F5) (B2, D5, F5) (B3, D5, F5) (B1, B2, B4) (B1, B3, B4) (B1, B4, D5) (B1, B4, F5) (B4, D4) (D1, D3) (B2, B5) (B3, B5) (B5, D5) (B5, F5) (B2, D6) (B3, D6) (D5, D6) (D6, F5) (B2, F2) (B3, F2) (D5, F2) (F2, F5) (B1, D2) (F4) |
+| 31 | 6 | (B1, B2, F1) (B1, B3, F1) (B1, D5, F1) (B1, F1, F5) (D4, F1) (B1, F3) |
+| 32 | 15 | (B2, B3, D3) (B2, D3, D5) (B3, D3, D5) (B2, D3, F5) (B3, D3, F5) (D3, D5, F5) (B1, B4, D3) (B1, B2, D4) (B1, B3, D4) (B1, D4, D5) (B1, D4, F5) (B4, D1) (B5, D3) (D3, D6) (D3, F2) |
+| 33 | 2 | (B1, D3, F1) (D1, F1) |
+| 34 | 19 | (B2, B3, B4) (B2, B4, D5) (B3, B4, D5) (B2, B4, F5) (B3, B4, F5) (B4, D5, F5) (B1, D3, D4) (B1, B2, D1) (B1, B3, D1) (B1, D1, D5) (B1, D1, F5) (D1, D4) (B4, B5) (B4, D6) (B4, F2) (B2, D2) (B3, D2) (D2, D5) (D2, F5) |
+| 35 | 14 | (B2, B3, F1) (B2, D5, F1) (B3, D5, F1) (B2, F1, F5) (B3, F1, F5) (D5, F1, F5) (B1, B4, F1) (B5, F1) (D6, F1) (F1, F2) (B2, F3) (B3, F3) (D5, F3) (F3, F5) |
+| 36 | 29 | (B2, B4, D3) (B3, B4, D3) (B4, D3, D5) (B4, D3, F5) (B2, B3, D4) (B2, D4, D5) (B3, D4, D5) (B2, D4, F5) (B3, D4, F5) (D4, D5, F5) (B1, B4, D4) (B1, D1, D3) (B1, B2, B5) (B1, B3, B5) (B1, B5, D5) (B1, B5, F5) (B5, D4) (B1, B2, D6) (B1, B3, D6) (B1, D5, D6) (B1, D6, F5) (D4, D6) (B1, B2, F2) (B1, B3, F2) (B1, D5, F2) (B1, F2, F5) (D4, F2) (D2, D3) (B1, F4) |
+| 37 | 6 | (B2, D3, F1) (B3, D3, F1) (D3, D5, F1) (D3, F1, F5) (B1, D4, F1) (D3, F3) |
+| 38 | 18 | (B2, D3, D4) (B3, D3, D4) (D3, D4, D5) (D3, D4, F5) (B2, B3, D1) (B2, D1, D5) (B3, D1, D5) (B2, D1, F5) (B3, D1, F5) (D1, D5, F5) (B1, B4, D1) (B1, B5, D3) (B5, D1) (B1, D3, D6) (D1, D6) (B1, D3, F2) (D1, F2) (B4, D2) |
+| 39 | 7 | (B2, B4, F1) (B3, B4, F1) (B4, D5, F1) (B4, F1, F5) (B1, D1, F1) (D2, F1) (B4, F3) |
+| 40 | 44 | (B2, B4, D4) (B3, B4, D4) (B4, D4, D5) (B4, D4, F5) (B2, D1, D3) (B3, D1, D3) (D1, D3, D5) (D1, D3, F5) (B1, D1, D4) (B2, B3, B5) (B2, B5, D5) (B3, B5, D5) (B2, B5, F5) (B3, B5, F5) (B5, D5, F5) (B1, B4, B5) (B2, B3, D6) (B2, D5, D6) (B3, D5, D6) (B2, D6, F5) (B3, D6, F5) (D5, D6, F5) (B1, B4, D6) (B5, D6) (B2, B3, F2) (B2, D5, F2) (B3, D5, F2) (B2, F2, F5) (B3, F2, F5) (D5, F2, F5) (B1, B4, F2) (B5, F2) (D6, F2) (B1, B2, D2) (B1, B3, D2) (B1, D2, D5) (B1, D2, F5) (D2, D4) (F1, F3) (B2, F4) (B3, F4) (D5, F4) (F4, F5) (B6) |
+| 41 | 13 | (B4, D3, F1) (B2, D4, F1) (B3, D4, F1) (D4, D5, F1) (D4, F1, F5) (B1, B5, F1) (B1, D6, F1) (B1, F1, F2) (B1, B2, F3) (B1, B3, F3) (B1, D5, F3) (B1, F3, F5) (D4, F3) |
+| 42 | 23 | (B4, D3, D4) (B2, B4, D1) (B3, B4, D1) (B4, D1, D5) (B4, D1, F5) (B2, B5, D3) (B3, B5, D3) (B5, D3, D5) (B5, D3, F5) (B1, B5, D4) (B2, D3, D6) (B3, D3, D6) (D3, D5, D6) (D3, D6, F5) (B1, D4, D6) (B2, D3, F2) (B3, D3, F2) (D3, D5, F2) (D3, F2, F5) (B1, D4, F2) (B1, D2, D3) (D1, D2) (D3, F4) |
+| 43 | 7 | (D3, D4, F1) (B2, D1, F1) (B3, D1, F1) (D1, D5, F1) (D1, F1, F5) (B1, D3, F3) (D1, F3) |
+| 44 | 31 | (B4, D1, D3) (B2, D1, D4) (B3, D1, D4) (D1, D4, D5) (D1, D4, F5) (B2, B4, B5) (B3, B4, B5) (B4, B5, D5) (B4, B5, F5) (B1, B5, D1) (B2, B4, D6) (B3, B4, D6) (B4, D5, D6) (B4, D6, F5) (B1, D1, D6) (B2, B4, F2) (B3, B4, F2) (B4, D5, F2) (B4, F2, F5) (B1, D1, F2) (B2, B3, D2) (B2, D2, D5) (B3, D2, D5) (B2, D2, F5) (B3, D2, F5) (D2, D5, F5) (B1, B4, D2) (B5, D2) (D2, D6) (D2, F2) (B4, F4) |
+| 45 | 26 | (B4, D4, F1) (D1, D3, F1) (B2, B5, F1) (B3, B5, F1) (B5, D5, F1) (B5, F1, F5) (B2, D6, F1) (B3, D6, F1) (D5, D6, F1) (D6, F1, F5) (B2, F1, F2) (B3, F1, F2) (D5, F1, F2) (F1, F2, F5) (B1, D2, F1) (B2, B3, F3) (B2, D5, F3) (B3, D5, F3) (B2, F3, F5) (B3, F3, F5) (D5, F3, F5) (B1, B4, F3) (B5, F3) (D6, F3) (F2, F3) (F1, F4) |
+| 46 | 31 | (D1, D3, D4) (B4, B5, D3) (B2, B5, D4) (B3, B5, D4) (B5, D4, D5) (B5, D4, F5) (B4, D3, D6) (B2, D4, D6) (B3, D4, D6) (D4, D5, D6) (D4, D6, F5) (B1, B5, D6) (B4, D3, F2) (B2, D4, F2) (B3, D4, F2) (D4, D5, F2) (D4, F2, F5) (B1, B5, F2) (B1, D6, F2) (B2, D2, D3) (B3, D2, D3) (D2, D3, D5) (D2, D3, F5) (B1, D2, D4) (B1, F1, F3) (B1, B2, F4) (B1, B3, F4) (B1, D5, F4) (B1, F4, F5) (D4, F4) (B1, B6) |
+| 47 | 9 | (B4, D1, F1) (B5, D3, F1) (D3, D6, F1) (D3, F1, F2) (B2, D3, F3) (B3, D3, F3) (D3, D5, F3) (D3, F3, F5) (B1, D4, F3) |
+| 48 | 23 | (B4, D1, D4) (B5, D3, D4) (B2, B5, D1) (B3, B5, D1) (B5, D1, D5) (B5, D1, F5) (D3, D4, D6) (B2, D1, D6) (B3, D1, D6) (D1, D5, D6) (D1, D6, F5) (D3, D4, F2) (B2, D1, F2) (B3, D1, F2) (D1, D5, F2) (D1, F2, F5) (B2, B4, D2) (B3, B4, D2) (B4, D2, D5) (B4, D2, F5) (B1, D1, D2) (B1, D3, F4) (D1, F4) |
+| 49 | 14 | (D1, D4, F1) (B4, B5, F1) (B4, D6, F1) (B4, F1, F2) (B2, D2, F1) (B3, D2, F1) (D2, D5, F1) (D2, F1, F5) (B2, B4, F3) (B3, B4, F3) (B4, D5, F3) (B4, F3, F5) (B1, D1, F3) (D2, F3) |
+| 50 | 44 | (B4, B5, D4) (B5, D1, D3) (B4, D4, D6) (D1, D3, D6) (B2, B5, D6) (B3, B5, D6) (B5, D5, D6) (B5, D6, F5) (B4, D4, F2) (D1, D3, F2) (B2, B5, F2) (B3, B5, F2) (B5, D5, F2) (B5, F2, F5) (B2, D6, F2) (B3, D6, F2) (D5, D6, F2) (D6, F2, F5) (B4, D2, D3) (B2, D2, D4) (B3, D2, D4) (D2, D4, D5) (D2, D4, F5) (B1, B5, D2) (B1, D2, D6) (B1, D2, F2) (B2, F1, F3) (B3, F1, F3) (D5, F1, F3) (F1, F3, F5) (B2, B3, F4) (B2, D5, F4) (B3, D5, F4) (B2, F4, F5) (B3, F4, F5) (D5, F4, F5) (B1, B4, F4) (B5, F4) (D6, F4) (F2, F4) (B2, B6) (B3, B6) (B6, D5) (B6, F5) |
+| 51 | 13 | (B5, D4, F1) (D4, D6, F1) (D4, F1, F2) (D2, D3, F1) (B4, D3, F3) (B2, D4, F3) (B3, D4, F3) (D4, D5, F3) (D4, F3, F5) (B1, B5, F3) (B1, D6, F3) (B1, F2, F3) (B1, F1, F4) |
+| 52 | 18 | (B4, B5, D1) (B4, D1, D6) (B5, D3, D6) (B4, D1, F2) (B5, D3, F2) (D3, D6, F2) (D2, D3, D4) (B2, D1, D2) (B3, D1, D2) (D1, D2, D5) (D1, D2, F5) (D3, F1, F3) (B2, D3, F4) (B3, D3, F4) (D3, D5, F4) (D3, F4, F5) (B1, D4, F4) (B6, D3) |
+| 53 | 9 | (B5, D1, F1) (D1, D6, F1) (D1, F1, F2) (B4, D2, F1) (D3, D4, F3) (B2, D1, F3) (B3, D1, F3) (D1, D5, F3) (D1, F3, F5) |
+| 54 | 28 | (B5, D1, D4) (D1, D4, D6) (B4, B5, D6) (D1, D4, F2) (B4, B5, F2) (B4, D6, F2) (B4, D2, D4) (D1, D2, D3) (B2, B5, D2) (B3, B5, D2) (B5, D2, D5) (B5, D2, F5) (B2, D2, D6) (B3, D2, D6) (D2, D5, D6) (D2, D6, F5) (B2, D2, F2) (B3, D2, F2) (D2, D5, F2) (D2, F2, F5) (B4, F1, F3) (B2, B4, F4) (B3, B4, F4) (B4, D5, F4) (B4, F4, F5) (B1, D1, F4) (D2, F4) (B4, B6) |
+| 55 | 25 | (B5, D6, F1) (B5, F1, F2) (D6, F1, F2) (D2, D4, F1) (B4, D4, F3) (D1, D3, F3) (B2, B5, F3) (B3, B5, F3) (B5, D5, F3) (B5, F3, F5) (B2, D6, F3) (B3, D6, F3) (D5, D6, F3) (D6, F3, F5) (B2, F2, F3) (B3, F2, F3) (D5, F2, F3) (F2, F3, F5) (B1, D2, F3) (B2, F1, F4) (B3, F1, F4) (D5, F1, F4) (F1, F4, F5) (F3, F4) (B6, F1) |
+| 56 | 21 | (B5, D4, D6) (B5, D4, F2) (D4, D6, F2) (B4, D1, D2) (B5, D2, D3) (D2, D3, D6) (D2, D3, F2) (D4, F1, F3) (B4, D3, F4) (B2, D4, F4) (B3, D4, F4) (D4, D5, F4) (D4, F4, F5) (B1, B5, F4) (B1, D6, F4) (B1, F2, F4) (B1, B2, B6) (B1, B3, B6) (B1, B6, D5) (B1, B6, F5) (B6, D4) |
+| 57 | 6 | (D1, D2, F1) (B4, D1, F3) (B5, D3, F3) (D3, D6, F3) (D3, F2, F3) (D3, F1, F4) |
+| 58 | 15 | (B5, D1, D6) (B5, D1, F2) (D1, D6, F2) (D1, D2, D4) (B4, B5, D2) (B4, D2, D6) (B4, D2, F2) (D1, F1, F3) (D3, D4, F4) (B2, D1, F4) (B3, D1, F4) (D1, D5, F4) (D1, F4, F5) (B1, B6, D3) (B6, D1) |
+| 59 | 12 | (B5, D2, F1) (D2, D6, F1) (D2, F1, F2) (D1, D4, F3) (B4, B5, F3) (B4, D6, F3) (B4, F2, F3) (B2, D2, F3) (B3, D2, F3) (D2, D5, F3) (D2, F3, F5) (B4, F1, F4) |
+| 60 | 32 | (B5, D6, F2) (B5, D2, D4) (D2, D4, D6) (D2, D4, F2) (B5, F1, F3) (D6, F1, F3) (F1, F2, F3) (B4, D4, F4) (D1, D3, F4) (B2, B5, F4) (B3, B5, F4) (B5, D5, F4) (B5, F4, F5) (B2, D6, F4) (B3, D6, F4) (D5, D6, F4) (D6, F4, F5) (B2, F2, F4) (B3, F2, F4) (D5, F2, F4) (F2, F4, F5) (B1, D2, F4) (B2, B3, B6) (B2, B6, D5) (B3, B6, D5) (B2, B6, F5) (B3, B6, F5) (B6, D5, F5) (B1, B4, B6) (B5, B6) (B6, D6) (B6, F2) |
+| 61 | 7 | (B5, D4, F3) (D4, D6, F3) (D4, F2, F3) (D2, D3, F3) (D4, F1, F4) (B1, F3, F4) (B1, B6, F1) |
+| 62 | 12 | (B5, D1, D2) (D1, D2, D6) (D1, D2, F2) (B4, D1, F4) (B5, D3, F4) (D3, D6, F4) (D3, F2, F4) (B2, B6, D3) (B3, B6, D3) (B6, D3, D5) (B6, D3, F5) (B1, B6, D4) |
+| 63 | 5 | (B5, D1, F3) (D1, D6, F3) (D1, F2, F3) (B4, D2, F3) (D1, F1, F4) |
+| 64 | 18 | (B5, D2, D6) (B5, D2, F2) (D2, D6, F2) (D2, F1, F3) (D1, D4, F4) (B4, B5, F4) (B4, D6, F4) (B4, F2, F4) (B2, D2, F4) (B3, D2, F4) (D2, D5, F4) (D2, F4, F5) (B2, B4, B6) (B3, B4, B6) (B4, B6, D5) (B4, B6, F5) (B1, B6, D1) (B6, D2) |
+| 65 | 16 | (B5, D6, F3) (B5, F2, F3) (D6, F2, F3) (D2, D4, F3) (B5, F1, F4) (D6, F1, F4) (F1, F2, F4) (B2, F3, F4) (B3, F3, F4) (D5, F3, F4) (F3, F4, F5) (B2, B6, F1) (B3, B6, F1) (B6, D5, F1) (B6, F1, F5) (B6, F3) |
+| 66 | 12 | (B5, D4, F4) (D4, D6, F4) (D4, F2, F4) (D2, D3, F4) (B4, B6, D3) (B2, B6, D4) (B3, B6, D4) (B6, D4, D5) (B6, D4, F5) (B1, B5, B6) (B1, B6, D6) (B1, B6, F2) |
+| 67 | 3 | (D1, D2, F3) (D3, F3, F4) (B6, D3, F1) |
+| 68 | 9 | (B5, D1, F4) (D1, D6, F4) (D1, F2, F4) (B4, D2, F4) (B6, D3, D4) (B2, B6, D1) (B3, B6, D1) (B6, D1, D5) (B6, D1, F5) |
+| 69 | 6 | (B5, D2, F3) (D2, D6, F3) (D2, F2, F3) (D2, F1, F4) (B4, F3, F4) (B4, B6, F1) |
+| 70 | 21 | (B5, D6, F4) (B5, F2, F4) (D6, F2, F4) (D2, D4, F4) (F1, F3, F4) (B4, B6, D4) (B6, D1, D3) (B2, B5, B6) (B3, B5, B6) (B5, B6, D5) (B5, B6, F5) (B2, B6, D6) (B3, B6, D6) (B6, D5, D6) (B6, D6, F5) (B2, B6, F2) (B3, B6, F2) (B6, D5, F2) (B6, F2, F5) (B1, B6, D2) (B6, F4) |
+| 71 | 3 | (D4, F3, F4) (B6, D4, F1) (B1, B6, F3) |
+| 72 | 5 | (D1, D2, F4) (B4, B6, D1) (B5, B6, D3) (B6, D3, D6) (B6, D3, F2) |
+| 73 | 2 | (D1, F3, F4) (B6, D1, F1) |
+| 74 | 11 | (B5, D2, F4) (D2, D6, F4) (D2, F2, F4) (B6, D1, D4) (B4, B5, B6) (B4, B6, D6) (B4, B6, F2) (B2, B6, D2) (B3, B6, D2) (B6, D2, D5) (B6, D2, F5) |
+| 75 | 10 | (B5, F3, F4) (D6, F3, F4) (F2, F3, F4) (B5, B6, F1) (B6, D6, F1) (B6, F1, F2) (B2, B6, F3) (B3, B6, F3) (B6, D5, F3) (B6, F3, F5) |
+| 76 | 5 | (B5, B6, D4) (B6, D4, D6) (B6, D4, F2) (B6, D2, D3) (B1, B6, F4) |
+| 78 | 4 | (B5, B6, D1) (B6, D1, D6) (B6, D1, F2) (B4, B6, D2) |
+| 79 | 3 | (D2, F3, F4) (B6, D2, F1) (B4, B6, F3) |
+| 80 | 9 | (B5, B6, D6) (B5, B6, F2) (B6, D6, F2) (B6, D2, D4) (B6, F1, F3) (B2, B6, F4) (B3, B6, F4) (B6, D5, F4) (B6, F4, F5) |
+| 82 | 2 | (B6, D1, D2) (B6, D3, F4) |
+| 84 | 4 | (B5, B6, D2) (B6, D2, D6) (B6, D2, F2) (B4, B6, F4) |
+| 85 | 4 | (B5, B6, F3) (B6, D6, F3) (B6, F2, F3) (B6, F1, F4) |
+| 90 | 3 | (B5, B6, F4) (B6, D6, F4) (B6, F2, F4) |
+| 100 | 3 | (A1) (C1) (E1) |
+| 106 | 3 | (A1, B1) (B1, C1) (B1, E1) |
+| 110 | 12 | (A1, B2) (A1, B3) (A1, D5) (A1, F5) (B2, C1) (B3, C1) (C1, D5) (C1, F5) (B2, E1) (B3, E1) (D5, E1) (E1, F5) |
+| 112 | 3 | (A1, D3) (C1, D3) (D3, E1) |
+| 114 | 3 | (A1, B4) (B4, C1) (B4, E1) |
+| 115 | 3 | (A1, F1) (C1, F1) (E1, F1) |
+| 116 | 15 | (A1, B1, B2) (A1, B1, B3) (A1, B1, D5) (A1, B1, F5) (A1, D4) (B1, B2, C1) (B1, B3, C1) (B1, C1, D5) (B1, C1, F5) (C1, D4) (B1, B2, E1) (B1, B3, E1) (B1, D5, E1) (B1, E1, F5) (D4, E1) |
+| 118 | 6 | (A1, B1, D3) (A1, D1) (B1, C1, D3) (C1, D1) (B1, D3, E1) (D1, E1) |
+| 120 | 30 | (A1, B2, B3) (A1, B2, D5) (A1, B3, D5) (A1, B2, F5) (A1, B3, F5) (A1, D5, F5) (A1, B1, B4) (A1, B5) (A1, D6) (A1, F2) (B2, B3, C1) (B2, C1, D5) (B3, C1, D5) (B2, C1, F5) (B3, C1, F5) (C1, D5, F5) (B1, B4, C1) (B5, C1) (C1, D6) (C1, F2) (B2, B3, E1) (B2, D5, E1) (B3, D5, E1) (B2, E1, F5) (B3, E1, F5) (D5, E1, F5) (B1, B4, E1) (B5, E1) (D6, E1) (E1, F2) |
+| 121 | 3 | (A1, B1, F1) (B1, C1, F1) (B1, E1, F1) |
+| 122 | 15 | (A1, B2, D3) (A1, B3, D3) (A1, D3, D5) (A1, D3, F5) (A1, B1, D4) (B2, C1, D3) (B3, C1, D3) (C1, D3, D5) (C1, D3, F5) (B1, C1, D4) (B2, D3, E1) (B3, D3, E1) (D3, D5, E1) (D3, E1, F5) (B1, D4, E1) |
+| 124 | 18 | (A1, B2, B4) (A1, B3, B4) (A1, B4, D5) (A1, B4, F5) (A1, B1, D1) (A1, D2) (B2, B4, C1) (B3, B4, C1) (B4, C1, D5) (B4, C1, F5) (B1, C1, D1) (C1, D2) (B2, B4, E1) (B3, B4, E1) (B4, D5, E1) (B4, E1, F5) (B1, D1, E1) (D2, E1) |
+| 125 | 15 | (A1, B2, F1) (A1, B3, F1) (A1, D5, F1) (A1, F1, F5) (A1, F3) (B2, C1, F1) (B3, C1, F1) (C1, D5, F1) (C1, F1, F5) (C1, F3) (B2, E1, F1) (B3, E1, F1) (D5, E1, F1) (E1, F1, F5) (E1, F3) |
+| 126 | 24 | (A1, B4, D3) (A1, B2, D4) (A1, B3, D4) (A1, D4, D5) (A1, D4, F5) (A1, B1, B5) (A1, B1, D6) (A1, B1, F2) (B4, C1, D3) (B2, C1, D4) (B3, C1, D4) (C1, D4, D5) (C1, D4, F5) (B1, B5, C1) (B1, C1, D6) (B1, C1, F2) (B4, D3, E1) (B2, D4, E1) (B3, D4, E1) (D4, D5, E1) (D4, E1, F5) (B1, B5, E1) (B1, D6, E1) (B1, E1, F2) |
+| 127 | 3 | (A1, D3, F1) (C1, D3, F1) (D3, E1, F1) |
+| 128 | 15 | (A1, D3, D4) (A1, B2, D1) (A1, B3, D1) (A1, D1, D5) (A1, D1, F5) (C1, D3, D4) (B2, C1, D1) (B3, C1, D1) (C1, D1, D5) (C1, D1, F5) (D3, D4, E1) (B2, D1, E1) (B3, D1, E1) (D1, D5, E1) (D1, E1, F5) |
+| 129 | 3 | (A1, B4, F1) (B4, C1, F1) (B4, E1, F1) |
+| 130 | 48 | (A1, B4, D4) (A1, D1, D3) (A1, B2, B5) (A1, B3, B5) (A1, B5, D5) (A1, B5, F5) (A1, B2, D6) (A1, B3, D6) (A1, D5, D6) (A1, D6, F5) (A1, B2, F2) (A1, B3, F2) (A1, D5, F2) (A1, F2, F5) (A1, B1, D2) (A1, F4) (B4, C1, D4) (C1, D1, D3) (B2, B5, C1) (B3, B5, C1) (B5, C1, D5) (B5, C1, F5) (B2, C1, D6) (B3, C1, D6) (C1, D5, D6) (C1, D6, F5) (B2, C1, F2) (B3, C1, F2) (C1, D5, F2) (C1, F2, F5) (B1, C1, D2) (C1, F4) (B4, D4, E1) (D1, D3, E1) (B2, B5, E1) (B3, B5, E1) (B5, D5, E1) (B5, E1, F5) (B2, D6, E1) (B3, D6, E1) (D5, D6, E1) (D6, E1, F5) (B2, E1, F2) (B3, E1, F2) (D5, E1, F2) (E1, F2, F5) (B1, D2, E1) (E1, F4) |
+| 131 | 6 | (A1, D4, F1) (A1, B1, F3) (C1, D4, F1) (B1, C1, F3) (D4, E1, F1) (B1, E1, F3) |
+| 132 | 12 | (A1, B4, D1) (A1, B5, D3) (A1, D3, D6) (A1, D3, F2) (B4, C1, D1) (B5, C1, D3) (C1, D3, D6) (C1, D3, F2) (B4, D1, E1) (B5, D3, E1) (D3, D6, E1) (D3, E1, F2) |
+| 133 | 3 | (A1, D1, F1) (C1, D1, F1) (D1, E1, F1) |
+| 134 | 24 | (A1, D1, D4) (A1, B4, B5) (A1, B4, D6) (A1, B4, F2) (A1, B2, D2) (A1, B3, D2) (A1, D2, D5) (A1, D2, F5) (C1, D1, D4) (B4, B5, C1) (B4, C1, D6) (B4, C1, F2) (B2, C1, D2) (B3, C1, D2) (C1, D2, D5) (C1, D2, F5) (D1, D4, E1) (B4, B5, E1) (B4, D6, E1) (B4, E1, F2) (B2, D2, E1) (B3, D2, E1) (D2, D5, E1) (D2, E1, F5) |
+| 135 | 21 | (A1, B5, F1) (A1, D6, F1) (A1, F1, F2) (A1, B2, F3) (A1, B3, F3) (A1, D5, F3) (A1, F3, F5) (B5, C1, F1) (C1, D6, F1) (C1, F1, F2) (B2, C1, F3) (B3, C1, F3) (C1, D5, F3) (C1, F3, F5) (B5, E1, F1) (D6, E1, F1) (E1, F1, F2) (B2, E1, F3) (B3, E1, F3) (D5, E1, F3) (E1, F3, F5) |
+| 136 | 15 | (A1, B5, D4) (A1, D4, D6) (A1, D4, F2) (A1, D2, D3) (A1, B1, F4) (B5, C1, D4) (C1, D4, D6) (C1, D4, F2) (C1, D2, D3) (B1, C1, F4) (B5, D4, E1) (D4, D6, E1) (D4, E1, F2) (D2, D3, E1) (B1, E1, F4) |
+| 137 | 3 | (A1, D3, F3) (C1, D3, F3) (D3, E1, F3) |
+| 138 | 12 | (A1, B5, D1) (A1, D1, D6) (A1, D1, F2) (A1, B4, D2) (B5, C1, D1) (C1, D1, D6) (C1, D1, F2) (B4, C1, D2) (B5, D1, E1) (D1, D6, E1) (D1, E1, F2) (B4, D2, E1) |
+| 139 | 6 | (A1, D2, F1) (A1, B4, F3) (C1, D2, F1) (B4, C1, F3) (D2, E1, F1) (B4, E1, F3) |
+| 140 | 30 | (A1, B5, D6) (A1, B5, F2) (A1, D6, F2) (A1, D2, D4) (A1, F1, F3) (A1, B2, F4) (A1, B3, F4) (A1, D5, F4) (A1, F4, F5) (A1, B6) (B5, C1, D6) (B5, C1, F2) (C1, D6, F2) (C1, D2, D4) (C1, F1, F3) (B2, C1, F4) (B3, C1, F4) (C1, D5, F4) (C1, F4, F5) (B6, C1) (B5, D6, E1) (B5, E1, F2) (D6, E1, F2) (D2, D4, E1) (E1, F1, F3) (B2, E1, F4) (B3, E1, F4) (D5, E1, F4) (E1, F4, F5) (B6, E1) |
+| 141 | 3 | (A1, D4, F3) (C1, D4, F3) (D4, E1, F3) |
+| 142 | 6 | (A1, D1, D2) (A1, D3, F4) (C1, D1, D2) (C1, D3, F4) (D1, D2, E1) (D3, E1, F4) |
+| 143 | 3 | (A1, D1, F3) (C1, D1, F3) (D1, E1, F3) |
+| 144 | 12 | (A1, B5, D2) (A1, D2, D6) (A1, D2, F2) (A1, B4, F4) (B5, C1, D2) (C1, D2, D6) (C1, D2, F2) (B4, C1, F4) (B5, D2, E1) (D2, D6, E1) (D2, E1, F2) (B4, E1, F4) |
+| 145 | 12 | (A1, B5, F3) (A1, D6, F3) (A1, F2, F3) (A1, F1, F4) (B5, C1, F3) (C1, D6, F3) (C1, F2, F3) (C1, F1, F4) (B5, E1, F3) (D6, E1, F3) (E1, F2, F3) (E1, F1, F4) |
+| 146 | 6 | (A1, D4, F4) (A1, B1, B6) (C1, D4, F4) (B1, B6, C1) (D4, E1, F4) (B1, B6, E1) |
+| 148 | 3 | (A1, D1, F4) (C1, D1, F4) (D1, E1, F4) |
+| 149 | 3 | (A1, D2, F3) (C1, D2, F3) (D2, E1, F3) |
+| 150 | 21 | (A1, B5, F4) (A1, D6, F4) (A1, F2, F4) (A1, B2, B6) (A1, B3, B6) (A1, B6, D5) (A1, B6, F5) (B5, C1, F4) (C1, D6, F4) (C1, F2, F4) (B2, B6, C1) (B3, B6, C1) (B6, C1, D5) (B6, C1, F5) (B5, E1, F4) (D6, E1, F4) (E1, F2, F4) (B2, B6, E1) (B3, B6, E1) (B6, D5, E1) (B6, E1, F5) |
+| 152 | 3 | (A1, B6, D3) (B6, C1, D3) (B6, D3, E1) |
+| 154 | 6 | (A1, D2, F4) (A1, B4, B6) (C1, D2, F4) (B4, B6, C1) (D2, E1, F4) (B4, B6, E1) |
+| 155 | 6 | (A1, F3, F4) (A1, B6, F1) (C1, F3, F4) (B6, C1, F1) (E1, F3, F4) (B6, E1, F1) |
+| 156 | 3 | (A1, B6, D4) (B6, C1, D4) (B6, D4, E1) |
+| 158 | 3 | (A1, B6, D1) (B6, C1, D1) (B6, D1, E1) |
+| 160 | 9 | (A1, B5, B6) (A1, B6, D6) (A1, B6, F2) (B5, B6, C1) (B6, C1, D6) (B6, C1, F2) (B5, B6, E1) (B6, D6, E1) (B6, E1, F2) |
+| 164 | 3 | (A1, B6, D2) (B6, C1, D2) (B6, D2, E1) |
+| 165 | 3 | (A1, B6, F3) (B6, C1, F3) (B6, E1, F3) |
+| 170 | 3 | (A1, B6, F4) (B6, C1, F4) (B6, E1, F4) |
+| 200 | 3 | (A1, C1) (A1, E1) (C1, E1) |
+| 206 | 3 | (A1, B1, C1) (A1, B1, E1) (B1, C1, E1) |
+| 210 | 12 | (A1, B2, C1) (A1, B3, C1) (A1, C1, D5) (A1, C1, F5) (A1, B2, E1) (A1, B3, E1) (A1, D5, E1) (A1, E1, F5) (B2, C1, E1) (B3, C1, E1) (C1, D5, E1) (C1, E1, F5) |
+| 212 | 3 | (A1, C1, D3) (A1, D3, E1) (C1, D3, E1) |
+| 214 | 3 | (A1, B4, C1) (A1, B4, E1) (B4, C1, E1) |
+| 215 | 3 | (A1, C1, F1) (A1, E1, F1) (C1, E1, F1) |
+| 216 | 3 | (A1, C1, D4) (A1, D4, E1) (C1, D4, E1) |
+| 218 | 3 | (A1, C1, D1) (A1, D1, E1) (C1, D1, E1) |
+| 220 | 9 | (A1, B5, C1) (A1, C1, D6) (A1, C1, F2) (A1, B5, E1) (A1, D6, E1) (A1, E1, F2) (B5, C1, E1) (C1, D6, E1) (C1, E1, F2) |
+| 224 | 3 | (A1, C1, D2) (A1, D2, E1) (C1, D2, E1) |
+| 225 | 3 | (A1, C1, F3) (A1, E1, F3) (C1, E1, F3) |
+| 230 | 3 | (A1, C1, F4) (A1, E1, F4) (C1, E1, F4) |
+| 240 | 3 | (A1, B6, C1) (A1, B6, E1) (B6, C1, E1) |
 
 <!-- scores end -->
