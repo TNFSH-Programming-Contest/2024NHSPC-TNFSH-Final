@@ -17,8 +17,8 @@ void sol(){
 	p[1].S=a;p[2].S=b;p[3].S=c;
 	sort(p+1, p+4, cmp);
 	//cout << p[1].F << " " << p[2].F << " " << p[3].F << endl;
-	for(int i=1;i<=n;i++)cin >> h[i];
 	cin >> d >> l >> r;
+	for(int i=1;i<=n;i++)cin >> h[i];
 	for(int i=11;i<=lim;i++)dp[i]=min(dp[i], dp[i-11]+a);
 	for(int i=451;i<=lim;i++)dp[i]=min(dp[i], dp[i-451]+b);
 	for(int i=11451;i<=lim;i++)dp[i]=min(dp[i], dp[i-11451]+c);
@@ -35,7 +35,7 @@ void sol(){
 	for(int i=1;i<=n;i++){
 		if(h[i]<=lim){
 			if(dp[h[i]]==1e18){
-				cout << "IMPOSSIBLE" << endl;
+				cout << -1 << endl;
 				return;
 			}
 			ans=ans+dp[h[i]];
@@ -43,7 +43,7 @@ void sol(){
 		else{
 			lli cal = (h[i]-lim+p[3].F-1)/p[3].F;
 			if(dp[h[i]-cal*p[3].F]==1e18){
-				cout << "IMPOSSIBLE\n";
+				cout << "-1\n";
 				return;
 			}
 			cal = cal*p[3].S + dp[h[i]-cal*p[3].F];
