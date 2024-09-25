@@ -19,16 +19,17 @@ void sieve(lli n){
         }
     }
 }
-lli get(lli a, lli b){
-    if(a<=b||a%b)return 0;
-    return (a*phi[a/b]%(mod-1))*fastpow(2, mod-3)%(mod-1);
-}
-lli fastpow(lli a, lli b){
+lli fastpow(lli a, lli b, lli c){
     lli res = 1;
     while(b!=0){
-        if(b&1)res=res*a%mod;
-        b>>=1;a=a*a%mod;
+        if(b&1)res=res*a%c;
+        b>>=1;a=a*a%c;
     }
+    return res;
+}
+lli get(lli a, lli b){
+    if(a<=b||a%b)return 0;
+    return (a*phi[a/b]%(mod-1))*fastpow(2, mod-3, mod-1)%(mod-1);
 }
 int main() {
 	ios_base::sync_with_stdio(0);cin.tie(0);
@@ -38,13 +39,13 @@ int main() {
     for(int i=1;i<=n;i++){
         lli tmp = 1;
         for(int j=1;j<=m;j++){
-            tmp=tmp*fastpow(c[j], get(i, c[j]))%mod;
+            tmp=tmp*fastpow(c[j], get(i, c[j]), mod)%mod;
         }
         s[i]=s[i-1]*tmp%mod;
     }
     for(int i=1;i<=q;i++){
         int a, b;
         cin >> a >> b;
-        cout << s[b]*fastpow(s[a-1], mod-2)%mod << endl;
+        cout << s[b]*fastpow(s[a-1], mod-2, mod)%mod << endl;
     }
 }
