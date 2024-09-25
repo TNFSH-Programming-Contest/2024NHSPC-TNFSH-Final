@@ -35,7 +35,7 @@ void sol(){
 	for(int i=1;i<=n;i++){
 		if(h[i]<=lim){
 			if(dp[h[i]]==1e18){
-				cout << "IMPOSSIBLE" << endl;
+				cout << -1 << endl;
 				return;
 			}
 			ans=ans+dp[h[i]];
@@ -43,7 +43,7 @@ void sol(){
 		else{
 			lli cal = (h[i]-lim+p[3].F-1)/p[3].F;
 			if(dp[h[i]-cal*p[3].F]==1e18){
-				cout << "IMPOSSIBLE\n";
+				cout << "-1\n";
 				return;
 			}
 			cal = cal*p[3].S + dp[h[i]-cal*p[3].F];
