@@ -7,7 +7,7 @@ inline int randomint(){
 int main(int argc, char* argv[]){
 	registerGen(argc, argv, 1);
     int subtask=atoi(argv[1]),idx=atoi(argv[2]);
-	int n=(subtask==5?3000:500000);
+	int n=(subtask==5?3000:subtask==6?500000:100000);
 	long long int c;
 	if(subtask==1)c=0;
 	else if(subtask==2)c=(idx%2?rnd.next(1,100):rnd.next(100000,1000000));

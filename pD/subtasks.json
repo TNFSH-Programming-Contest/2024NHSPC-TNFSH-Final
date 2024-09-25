@@ -12,25 +12,25 @@
         "1": {
             "index": 1,
             "score": 18,
-            "text": "$c=0$",
+            "text": "$c=0$ 且 $n\\le 10^5$",
             "validators": []
         },
         "2": {
             "index": 2,
             "score": 24,
-            "text": "$c\\le 10^6$",
+            "text": "$c\\le 10^6$ 且 $n\\le 10^5$",
             "validators": []
         },
         "3": {
             "index": 3,
             "score": 12,
-            "text": "$c=10^{18}$ 且所有 $a_i=1$",
+            "text": "$c=10^{18}$ 且所有 $a_i=1$ 且 $n\\le 10^5$",
             "validators": []
         },
         "4": {
             "index": 4,
             "score": 16,
-            "text": "$c=10^{18}$",
+            "text": "$c=10^{18}$ 且 $n\\le 10^5$",
             "validators": []
         },
         "5": {
