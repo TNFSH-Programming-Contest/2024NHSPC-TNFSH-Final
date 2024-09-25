@@ -29,7 +29,6 @@ int main(){
             	dis[i][j]=1e15;
             	in[i][j]=a[i][j];
             	for(int k=1;k<=b[i][j];k++)if((~per)&(1<<(z[i][j][k]-1)))in[i][j]++;
-				cout<<i<<' '<<j<<' '<<in[i][j]<<'\n';
 			}
         }
 		queue<pair<int,int>>qu;//store the (item_id,way_id) which can be maken
@@ -59,5 +58,5 @@ int main(){
 		for(int i=1;i<=m;i++)if(per&(1<<(i-1)))tsum+=t[i];
 		for(int i=1;i<=n;i++)ans[i]=min(ans[i],now[i]+tsum);
     }
-	for(int i=1;i<=n;i++)cout<<ans[i]<<'\n';
+	for(int i=1;i<=n;i++)cout<<(ans[i]!=1e15?ans[i]:-1)<<'\n';
 }

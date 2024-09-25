@@ -8,7 +8,7 @@ inline int randomint(double l,double r){
 int main(int argc, char* argv[]){
 	registerGen(argc, argv, 1);
     int subtask=atoi(argv[1]),idx=atoi(argv[2]);
-	int n=(idx%2?rnd.next(1,99):100),m=10;
+	int n=(idx%2?rnd.next(1,99):100),m=10,sp=0;
 	cout<<n<<' '<<m<<'\n';
 	for(int i=0;i<n;i++)shufa[i]=i+1;
 	for(int i=0;i<m;i++)shufb[i]=i+1;
@@ -17,7 +17,8 @@ int main(int argc, char* argv[]){
 	for(int i=0;i<m;i++)t[i]=randomint(0,9);
 	for(int i=0;i<m;i++)cout<<t[i]<<" \n"[i==m-1];
 	for(int i=0;i<n;i++)for(int j=0;j<way[i];j++){
-		a[i][j]=(subtask==1||subtask==2?0:subtask==3||subtask==4?1:rnd.next(0,min(n,10)));
+		sp++;
+		a[i][j]=(subtask==1||subtask==2?0:subtask==3||subtask==4?1:idx%5!=0&&sp%5==1?0:rnd.next(0,min(n,10)));
 		cout<<a[i][j]<<' ';
 		shuffle(shufa,shufa+n);
 		for(int k=0;k<a[i][j];k++)cout<<shufa[k]<<' '<<rnd.next(1,10)<<" \n"[k==a[i][j]-1];
