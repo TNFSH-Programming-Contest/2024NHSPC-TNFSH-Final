@@ -22,7 +22,6 @@ int main(){
 		}
 	}
     for(int per=0;per<(1<<m);per++){
-		cout<<per<<'\n';
         for(int i=1;i<=n;i++){
 			now[i]=1e15;
 			for(int j=1;j<=way[i];j++){
