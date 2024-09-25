@@ -12,7 +12,7 @@
         "1": {
             "index": 1,
             "score": 13,
-            "text": "$1 \le n$, $q \le 3000$",
+            "text": "$1 \\le n$, $q \\le 3000$",
             "validators": []
         },
         "2": {
@@ -24,7 +24,7 @@
         "3": {
             "index": 3,
             "score": 42,
-            "text": "$1 \le n$, $q \le 10^{6}$",
+            "text": "$1 \\le n$, $q \\le 10^{6}$",
             "validators": []
         },
         "4": {
