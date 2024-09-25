@@ -11,37 +11,37 @@
         },
         "1": {
             "index": 1,
-            "score": 6,
+            "score": 10,
             "text": "所有 $a_{i,j}=b_{i,j}=0$",
             "validators": []
         },
         "2": {
             "index": 2,
-            "score": 10,
+            "score": 14,
             "text": "所有 $a_{i,j}=0$",
             "validators": []
         },
         "3": {
             "index": 3,
-            "score": 10,
+            "score": 14,
             "text": "所有 $a_{i,j}=1,b_{i,j}=0$",
             "validators": []
         },
         "4": {
             "index": 4,
-            "score": 14,
+            "score": 18,
             "text": "所有 $a_{i,j}=1$",
             "validators": []
         },
         "5": {
             "index": 5,
-            "score": 20,
+            "score": 24,
             "text": "所有 $way_i=1$",
             "validators": []
         },
         "6": {
             "index": 6,
-            "score": 40,
+            "score": 20,
             "text": "無額外限制",
             "validators": []
         }
