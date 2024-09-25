@@ -26,6 +26,8 @@ $3$ $y$
  - $1 \le n$, $q \le 5\times 10^{6}$\
  - $1 \le l \le r \le n$
  - $1 \le k \le 10^{9}$
+ - $1 \le x \le n-1$\
+ - $1 \le y \le n$
 
 ## 子任務
 \subtasks
