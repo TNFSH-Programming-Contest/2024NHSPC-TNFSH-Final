@@ -4,13 +4,20 @@ using namespace std;
 #define F first
 #define S second
 lli h[1000005], n, a, b, c, d, l, r, dp[6000005];
+lli lim = 6e6;
 multiset<lli> ms;
 pair<lli, lli> p[5];
 bool cmp(pair<lli, lli> a, pair<lli, lli> b){
 	return a.S*b.F>a.F*b.S;
 }
+lli get(int x){
+	if(x<=lim)return dp[x];
+	lli cal = (x-lim+p[3].F-1)/p[3].F;
+	cal = cal*p[3].S + dp[x-cal*p[3].F];
+	return cal;
+}
 void sol(){
-	lli lim = 6e6;
+	lim = 6e6;
 	for(int i=1;i<=lim;i++)dp[i]=1e18;
 	cin >> n >> a >> b >> c;
 	p[1].F=11;p[2].F=451;p[3].F=11451;
