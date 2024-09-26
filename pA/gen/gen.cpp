@@ -76,8 +76,8 @@ int main(int argc, char* argv[]) {
 					k = rnd.next(1, 100000);
 				}else if(i%3==1){
 					int cc = n/10;
-					l = rnd.next(1, c);
-					r = rnd.next(n-c, n);
+					l = rnd.next(1, cc);
+					r = rnd.next(n-cc, n);
 					k = rnd.next(10000, 100000);
 				}else if(i%3==2){
 					l = rnd.next(1, n);
@@ -102,8 +102,8 @@ int main(int argc, char* argv[]) {
 					k = rnd.next(1, 100000);
 				}else if(i%3==1){
 					int cc = n/10;
-					l = rnd.next(1, c);
-					r = rnd.next(n-c, n);
+					l = rnd.next(1, cc);
+					r = rnd.next(n-cc, n);
 					k = rnd.next(10000, 100000);
 				}else if(i%3==2){
 					l = rnd.next(1, n);
@@ -131,8 +131,8 @@ int main(int argc, char* argv[]) {
 					k = rnd.next(50000, 100000);
 				}else if(i%7==5){
 					int cc = n/10;
-					l = rnd.next(1, c);
-					r = rnd.next(n-c, n);
+					l = rnd.next(1, cc);
+					r = rnd.next(n-cc, n);
 					k = rnd.next(50000, 100000);
 				}else if(i%7==6){
 					l = rnd.next(1, n);
