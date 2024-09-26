@@ -2,9 +2,10 @@
 using namespace std;
 #define lli long long int
 const lli mod = 998244353;
+lli n, m, q;
 lli s[1000005], c[1000005];
-bitset<(ll)1e6+5> np;
-lli p[(ll)1e6+5], phi[(ll)1e6+5];
+bitset<(lli)1e6+5> np;
+lli p[(lli)1e6+5], phi[(lli)1e6+5];
 void sieve(lli n){
     lli cnt = 1;
     for(lli i=2;i<=n;i++){
