@@ -1,5 +1,7 @@
 @subtask samples
 manual example-1.in
+manual example-2.in
+
 
 @subtask 1
 gen	1 1
