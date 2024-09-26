@@ -11,25 +11,37 @@
         },
         "1": {
             "index": 1,
-            "score": 13,
-            "text": "$1 \\le n$, $q \\le 3000$",
+            "score": 7,
+            "text": "$1 \\le n$, $q \\le 500$",
             "validators": []
         },
         "2": {
             "index": 2,
-            "score": 26,
-            "text": "$只有第 $1$ 和第 $3$種事件",
+            "score": 19,
+            "text": "$只有第 $1$ 種事件",
             "validators": []
         },
         "3": {
             "index": 3,
-            "score": 42,
-            "text": "$1 \\le n$, $q \\le 10^{6}$",
+            "score": 13,
+            "text": "只有第 $1$ 和第 $3$ 種事件",
             "validators": []
         },
         "4": {
             "index": 4,
-            "score": 19,
+            "score": 29,
+            "text": "只有第 $1$ 和第 $2$ 種事件",
+            "validators": []
+        },
+        "5": {
+            "index": 5,
+            "score": 21,
+            "text": "$1 \le n$, $q \le 10^{6}$",
+            "validators": []
+        },
+        "6": {
+            "index": 6,
+            "score": 11,
             "text": "無額外限制",
             "validators": []
         }
