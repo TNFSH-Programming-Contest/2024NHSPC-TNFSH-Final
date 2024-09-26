@@ -31,13 +31,13 @@ gen	2 22
 gen	2 23
 gen	2 24
 gen	2 25
-gen	2 26
-gen	2 27
-gen	2 28
-gen	2 29
-gen	2 30
 
 @subtask 3
+gen	3 26
+gen	3 27
+gen	3 28
+gen	3 29
+gen	3 30
 gen	3 31
 gen	3 32
 gen	3 33
@@ -48,18 +48,18 @@ gen	3 37
 gen	3 38
 gen	3 39
 gen	3 40
-gen	3 41
-gen	3 42
-gen	3 43
-gen	3 44
-gen	3 45
-gen	3 46
-gen	3 47
-gen	3 48
-gen	3 49
-gen	3 50
 
 @subtask 4
+gen	4 41
+gen	4 42
+gen	4 43
+gen	4 44
+gen	4 45
+gen	4 46
+gen	4 47
+gen	4 48
+gen	4 49
+gen	4 50
 gen	4 51
 gen	4 52
 gen	4 53
@@ -70,40 +70,40 @@ gen	4 57
 gen	4 58
 gen	4 59
 gen	4 60
-gen	4 61
-gen	4 62
-gen	4 63
-gen	4 64
-gen	4 65
-gen	4 66
-gen	4 67
-gen	4 68
-gen	4 69
-gen	4 70
 
 @subtask 5
+gen	5 61
+gen	5 62
+gen	5 63
+gen	5 64
+gen	5 65
+gen	5 66
+gen	5 67
+gen	5 68
+gen	5 69
+gen	5 70
 gen	5 71
 gen	5 72
 gen	5 73
 gen	5 74
 gen	5 75
-gen	5 76
-gen	5 77
-gen	5 78
-gen	5 79
-gen	5 80
-gen	5 81
-gen	5 82
-gen	5 83
-gen	5 84
-gen	5 85
-gen	5 86
-gen	5 87
-gen	5 88
-gen	5 89
-gen	5 90
 
 @subtask 6
+gen	6 76
+gen	6 77
+gen	6 78
+gen	6 79
+gen	6 80
+gen	6 81
+gen	6 82
+gen	6 83
+gen	6 84
+gen	6 85
+gen	6 86
+gen	6 87
+gen	6 88
+gen	6 89
+gen	6 90
 gen	6 91
 gen	6 92
 gen	6 93
@@ -114,13 +114,3 @@ gen	6 97
 gen	6 98
 gen	6 99
 gen	6 100
-gen	6 101
-gen	6 102
-gen	6 103
-gen	6 104
-gen	6 105
-gen	6 106
-gen	6 107
-gen	6 108
-gen	6 109
-gen	6 110
