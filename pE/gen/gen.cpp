@@ -5,17 +5,14 @@ using namespace std;
 int main(int argc, char* argv[]) {
 	registerGen(argc, argv, 1);
 	int subtask=atoi(argv[1]);
-	int a, b, c, d, n, l, r;
+	int a, b, c, d, n;
 	if(subtask==1){
 		n = rnd.next(1000, 100000);
 		a = rnd.next(1, 10000000);
 		b = rnd.next(1, 10000000);
 		c = rnd.next(1, 10000000);
 		d = rnd.next(1, 10000000);
-		l = rnd.next(1, 1000000);
-		r = rnd.next(l, 1000000);
-		cout << n << ' ' << a << ' ' << b << ' ' << c << endl;
-		cout << d << ' ' << l << ' ' << r << endl;
+		cout << n << ' ' << a << ' ' << b << ' ' << c << ' ' << d << endl;
 		for(int i=1;i<=n;i++){
 			if(i%3==1){
 				cout << rnd.next(1, 100) << " \n"[i==n];
@@ -32,10 +29,7 @@ int main(int argc, char* argv[]) {
 		b = rnd.next(1, 10000000);
 		c = rnd.next(1, 10000000);
 		d = rnd.next(1, 10000000);
-		l = rnd.next(1, 1000000);
-		r = l;
-		cout << n << ' ' << a << ' ' << b << ' ' << c << endl;
-		cout << d << ' ' << l << ' ' << r << endl;
+		cout << n << ' ' << a << ' ' << b << ' ' << c << ' ' << d << endl;
 		for(int i=1;i<=n;i++){
 			if(i%3==1){
 				cout << rnd.next(1, 100) << " \n"[i==n];
@@ -52,10 +46,7 @@ int main(int argc, char* argv[]) {
 		b = rnd.next(1, 10000000);
 		c = rnd.next(1, 10000000);
 		d = rnd.next(1, 10000000);
-		l = rnd.next(1, 100000);
-		r = rnd.next(500000, 1000000);
-		cout << n << ' ' << a << ' ' << b << ' ' << c << endl;
-		cout << d << ' ' << l << ' ' << r << endl;
+		cout << n << ' ' << a << ' ' << b << ' ' << c << ' ' << d << endl;
 		for(int i=1;i<=n;i++){
 			if(i%3==1){
 				cout << rnd.next(1, 100) << " \n"[i==n];
