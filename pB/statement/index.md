@@ -60,7 +60,7 @@ $c_{n,way_n}$
 
 ## 輸入限制
  - $1\le n\le 100$
- - $0\le m\le 10$
+ - $0\le m\le 12$
  - $1\le way_i\le 10$
  - $0\le t_i\le 10^9$
  - $0\le a_{i,j}\le min(n,10)$

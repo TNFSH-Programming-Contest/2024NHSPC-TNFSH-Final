@@ -8,7 +8,7 @@ inline int randomint(double l,double r){
 int main(int argc, char* argv[]){
 	registerGen(argc, argv, 1);
     int subtask=atoi(argv[1]),idx=atoi(argv[2]);
-	int n=(idx%2?rnd.next(1,99):100),m=10,sp=0;
+	int n=(idx%2?rnd.next(1,99):100),m=12,sp=0;
 	cout<<n<<' '<<m<<'\n';
 	for(int i=0;i<n;i++)shufa[i]=i+1;
 	for(int i=0;i<m;i++)shufb[i]=i+1;
