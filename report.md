@@ -3,7 +3,6 @@
 <!-- progress start -->
 
 - cover.tex [:white_check_mark:](cover.tex)
-- appendix.tex [:x:](appendix.tex)
 
 | | A | B | C | D | E | F |
 | --- | --- | --- | --- | --- | --- | --- |
