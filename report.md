@@ -14,7 +14,7 @@
 | memory_limit |  512 | 512 | 512 | 128 | 512 | 512 |
 | time_limit |  1.0 | 1.0 | 1.0 | 1.0 | 4.0 | 2.0 |
 | has_checker |  False | False | False | False | False | False |
-| gen | [:white_check_mark:](pA/gen) | [:white_check_mark:](pB/gen) | [:x:](pC/gen)<br>[data](pC/gen/data) | [:white_check_mark:](pD/gen) | [:white_check_mark:](pE/gen) | [:white_check_mark:](pF/gen) |
+| gen | [:white_check_mark:](pA/gen) | [:white_check_mark:](pB/gen) | [:white_check_mark:](pC/gen) | [:white_check_mark:](pD/gen) | [:white_check_mark:](pE/gen) | [:white_check_mark:](pF/gen) |
 | solution | [:white_check_mark:](pA/solution) | [:white_check_mark:](pB/solution) | [:white_check_mark:](pC/solution) | [:white_check_mark:](pD/solution) | [:white_check_mark:](pE/solution) | [:white_check_mark:](pF/solution) |
 | validator | [:x:](pA/validator)<br>[validator.cpp](pA/validator/validator.cpp) | [:x:](pB/validator)<br>[validator.cpp](pB/validator/validator.cpp) | [:x:](pC/validator)<br>[validator.cpp](pC/validator/validator.cpp) | [:x:](pD/validator)<br>[validator.cpp](pD/validator/validator.cpp) | [:x:](pE/validator)<br>[validator.cpp](pE/validator/validator.cpp) | [:x:](pF/validator)<br>[validator.cpp](pF/validator/validator.cpp) |
 | subtasks.json<br>global_validators |  [:warning:](pA/subtasks.json) Not set | [:warning:](pB/subtasks.json) Not set | [:warning:](pC/subtasks.json) Not set | [:warning:](pD/subtasks.json) Not set | [:warning:](pE/subtasks.json) Not set | [:warning:](pF/subtasks.json) Not set |
