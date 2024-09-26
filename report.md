@@ -12,7 +12,7 @@
 | name |  [:white_check_mark:](pA/problem.json)<br>Water | [:white_check_mark:](pB/problem.json)<br>HelloMinecraft | [:white_check_mark:](pC/problem.json)<br>Tower | [:white_check_mark:](pD/problem.json)<br>AngusFarm | [:white_check_mark:](pE/problem.json)<br>114514 | [:white_check_mark:](pF/problem.json)<br>ShortProblemAgain |
 | title |  [:white_check_mark:](pA/problem.json)<br>水題 | [:white_check_mark:](pB/problem.json)<br>你好我的世界 | [:white_check_mark:](pC/problem.json)<br>神魔之塔 | [:white_check_mark:](pD/problem.json)<br>Angus與菜寮 | [:white_check_mark:](pE/problem.json)<br>反毒 | [:white_check_mark:](pF/problem.json)<br>又一個簡短的問題 |
 | memory_limit |  512 | 512 | 512 | 128 | 512 | 512 |
-| time_limit |  1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2.0 |
+| time_limit |  1.0 | 1.0 | 1.0 | 1.0 | 4.0 | 2.0 |
 | has_checker |  False | False | False | False | False | False |
 | gen | [:white_check_mark:](pA/gen) | [:white_check_mark:](pB/gen) | [:x:](pC/gen)<br>[data](pC/gen/data) | [:white_check_mark:](pD/gen) | [:white_check_mark:](pE/gen) | [:white_check_mark:](pF/gen) |
 | solution | [:white_check_mark:](pA/solution) | [:white_check_mark:](pB/solution) | [:white_check_mark:](pC/solution) | [:white_check_mark:](pD/solution) | [:white_check_mark:](pE/solution) | [:white_check_mark:](pF/solution) |
