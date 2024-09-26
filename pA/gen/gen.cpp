@@ -4,7 +4,7 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
 	registerGen(argc, argv, 1);
-	int subtask=atoi(argv[1]);int idx = atoi(argv[2]);
+	int subtask=atoi(argv[1]);
 	long long int n, q;
 	if(subtask==1) n=3000, q=3000;
 	else n=5000000, q=5000000;
