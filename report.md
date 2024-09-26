@@ -20,7 +20,7 @@
 | subtasks.json<br>global_validators |  [:warning:](pA/subtasks.json) Not set | [:warning:](pB/subtasks.json) Not set | [:warning:](pC/subtasks.json) Not set | [:warning:](pD/subtasks.json) Not set | [:warning:](pE/subtasks.json) Not set | [:warning:](pF/subtasks.json) Not set |
 | tests | [:white_check_mark:](pA/tests)<br>[Auto build disabled](pA/gen/DISABLE_AUTO_BUILD) | [:white_check_mark:](pB/tests)<br>[Auto build disabled](pB/gen/DISABLE_AUTO_BUILD) | [:x:](pC/tests)<br>[Auto build disabled](pC/gen/DISABLE_AUTO_BUILD) | [:white_check_mark:](pD/tests)<br>[Auto build disabled](pD/gen/DISABLE_AUTO_BUILD) | [:x:](pE/tests)<br>[Auto build disabled](pE/gen/DISABLE_AUTO_BUILD) | [:white_check_mark:](pF/tests)<br>[Auto build disabled](pF/gen/DISABLE_AUTO_BUILD) |
 | statement/index.md | [:white_check_mark:](pA/statement/index.md) | [:white_check_mark:](pB/statement/index.md) | [:white_check_mark:](pC/statement/index.md) | [:white_check_mark:](pD/statement/index.md) | [:white_check_mark:](pE/statement/index.md) | [:white_check_mark:](pF/statement/index.md) |
-| statement/index.pdf | [:white_check_mark:](pA/statement/index.pdf)<br>[Auto build disabled](pA/statement/DISABLE_AUTO_BUILD) | [:white_check_mark:](pB/statement/index.pdf)<br>[Auto build disabled](pB/statement/DISABLE_AUTO_BUILD) | [:x:](pC/statement/index.pdf)<br>[Auto build disabled](pC/statement/DISABLE_AUTO_BUILD) | [:white_check_mark:](pD/statement/index.pdf)<br>[Auto build disabled](pD/statement/DISABLE_AUTO_BUILD) | [:white_check_mark:](pE/statement/index.pdf)<br>[Auto build disabled](pE/statement/DISABLE_AUTO_BUILD) | [:white_check_mark:](pF/statement/index.pdf)<br>[Auto build disabled](pF/statement/DISABLE_AUTO_BUILD) |
+| statement/index.pdf | [:white_check_mark:](pA/statement/index.pdf)<br>[Auto build disabled](pA/statement/DISABLE_AUTO_BUILD) | [:white_check_mark:](pB/statement/index.pdf)<br>[Auto build disabled](pB/statement/DISABLE_AUTO_BUILD) | [:white_check_mark:](pC/statement/index.pdf)<br>[Auto build disabled](pC/statement/DISABLE_AUTO_BUILD) | [:white_check_mark:](pD/statement/index.pdf)<br>[Auto build disabled](pD/statement/DISABLE_AUTO_BUILD) | [:white_check_mark:](pE/statement/index.pdf)<br>[Auto build disabled](pE/statement/DISABLE_AUTO_BUILD) | [:white_check_mark:](pF/statement/index.pdf)<br>[Auto build disabled](pF/statement/DISABLE_AUTO_BUILD) |
 
 <!-- progress end -->
 
@@ -31,7 +31,7 @@
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | A | 7<br>$1 \le n$, $q \le 500$ | 19<br>$只有第 $1$ 種事件 | 13<br>只有第 $1$ 和第 $3$ 種事件 | 29<br>只有第 $1$ 和第 $2$ 種事件 | 21<br>$1 \le n$, $q \le 10^{6}$ | 11<br>無額外限制 |
 | B | 10<br>所有 $a_{i,j}=b_{i,j}=0$ 且 $m\le 10$ | 14<br>所有 $a_{i,j}=0$ 且 $m\le 10$ | 14<br>所有 $a_{i,j}=1,b_{i,j}=0$ 且 $m\le 10$ | 18<br>所有 $a_{i,j}=1$ 且 $m\le 10$ | 20<br>所有 $way_i=1$ 且 $m\le 10$ | 12<br>$m\le 10$ | 12<br>無額外限制 |
-| C | 17<br>$1 \le n \le 500$ | 19<br>對於所有 $1\le i \le m$ 都有 $n/2 < c_i \le n$ | 64<br>無額外限制 |
+| C | 17<br>$1 \le n \le 500$ | 19<br>對於所有 $1\le i \le m$ 都有 $l \lceil \frac{n}{2} \rceil < c_i \le n$ | 64<br>無額外限制 |
 | D | 18<br>$c=0$ 且 $n\le 10^5$ | 24<br>$c\le 10^6$ 且 $n\le 10^5$ | 12<br>$c=10^{18}$ 且所有 $a_i=1$ 且 $n\le 10^5$ | 16<br>$c=10^{18}$ 且 $n\le 10^5$ | 10<br>$n\le 3000$ | 20<br>無額外限制 |
 | E | 23<br>對於所有 $1 \le i \le n$ 都有 $1\le h_i \le 10^{6}$ | 31<br>$l=1$, $r=10^{9}$ | 46<br>無額外限制 |
 | F | 15<br>$n\le 10^7,m=1$ | 20<br>$n\le 10^7,m\le 10^6$ | 25<br>$m=1$ | 30<br>$m\le 10^6$ | 10<br>無額外限制 |
