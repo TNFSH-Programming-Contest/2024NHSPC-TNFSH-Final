@@ -27,9 +27,11 @@ void sol(){
 	cin >> d;
 	l=1, r=11450;
 	for(int i=1;i<=n;i++)cin >> h[i];
-	for(int i=11;i<=lim;i++)dp[i]=min(dp[i], dp[i-11]+a);
-	for(int i=451;i<=lim;i++)dp[i]=min(dp[i], dp[i-451]+b);
-	for(int i=11451;i<=lim;i++)dp[i]=min(dp[i], dp[i-11451]+c);
+	for(int i=11;i<=lim;i++){
+		dp[i]=min(dp[i], dp[i-11]+a);
+		if(i>=451) dp[i]=min(dp[i], dp[i-451]+b);
+		if(i>=11451) dp[i]=min(dp[i], dp[i-11451]+c);
+	}
 	for(int i=lim;i>0;i--){
 		if(i+l<=lim)ms.insert(get(i+l));
 		if(ms.empty())continue;
@@ -37,9 +39,11 @@ void sol(){
 		dp[i]=min(dp[i], tmp+d);
 		if(i+r<=lim)ms.erase(ms.find(get(i+r)));
 	}
-	for(int i=11;i<=lim;i++)dp[i]=min(dp[i], dp[i-11]+a);
-	for(int i=451;i<=lim;i++)dp[i]=min(dp[i], dp[i-451]+b);
-	for(int i=11451;i<=lim;i++)dp[i]=min(dp[i], dp[i-11451]+c);
+	for(int i=11;i<=lim;i++){
+		dp[i]=min(dp[i], dp[i-11]+a);
+		if(i>=451) dp[i]=min(dp[i], dp[i-451]+b);
+		if(i>=11451) dp[i]=min(dp[i], dp[i-11451]+c);
+	}
 	lli ans = 0;
 	for(int i=1;i<=n;i++){
 		if(h[i]<=lim){
