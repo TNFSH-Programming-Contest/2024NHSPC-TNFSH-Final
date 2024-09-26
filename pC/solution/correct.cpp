@@ -2,10 +2,24 @@
 using namespace std;
 #define lli long long int
 const lli mod = 998244353;
-lli n, m, q;
+lli n, m, q, mmod;
 lli s[1000005], c[1000005];
 bitset<(lli)1e6+5> np;
 lli p[(lli)1e6+5], phi[(lli)1e6+5];
+lli getphi(lli x){
+    if (x < 2) return 0;
+    lli ret = x;
+    lli sq = sqrt(x);
+    for (lli p=2; p<=sq; p++){
+        if (x % p == 0){
+            while (x % p == 0) x /= p;
+            ret -= ret / p;
+        }
+        if (x == 1) break;
+    }
+    if (x > 1) ret -= ret / x;
+    return ret;
+}
 void sieve(lli n){
     lli cnt = 1;
     for(lli i=2;i<=n;i++){
@@ -28,20 +42,26 @@ lli fastpow(lli a, lli b, lli c){
     }
     return res;
 }
-lli get(lli a, lli b){
+lli get(lli a, lli b){ //gcd(i, a)==b
     if(a<=b||a%b)return 0;
-    return (a*phi[a/b]%(mod-1))*fastpow(2, mod-3, mod-1)%(mod-1);
+    lli tmp = phi[a/b];
+    if(a%2==0)a>>=1;
+    else tmp>>=1;
+    return (a*tmp%(mod-1));
 }
 int main() {
 	ios_base::sync_with_stdio(0);cin.tie(0);
     cin >> n >> m >> q;
+    sieve(n);mmod=getphi(mod-1);
     for(int i=1;i<=m;i++)cin >> c[i];
     s[0]=s[1]=1;
     for(int i=1;i<=n;i++){
         lli tmp = 1;
         for(int j=1;j<=m;j++){
             tmp=tmp*fastpow(c[j], get(i, c[j]), mod)%mod;
+            //cout << i << " and " << c[j] << " get " << get(i, c[j]) << endl;
         }
+        //cout << i << " " << tmp << endl;
         s[i]=s[i-1]*tmp%mod;
     }
     for(int i=1;i<=q;i++){
