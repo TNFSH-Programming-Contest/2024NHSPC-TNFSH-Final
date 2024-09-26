@@ -12,7 +12,7 @@ int main(int argc, char* argv[]){
 	if(subtask==1)c=0;
 	else if(subtask==2)c=(idx%2?rnd.next(1,100):rnd.next(100000,1000000));
 	else if(subtask==3||subtask==4)c=1e18;
-	else c=(idx%4==1?rnd.next(1,100):idx%4==2?rnd.next(100000,1000000):idx%4==3?rnd.next(1000000000LL,10000000000LL):rnd.next((long long int)1e12,(long long int)1e13));
+	else c=(idx%4==1?rnd.next(1LL,100LL):idx%4==2?rnd.next(100000LL,1000000LL):idx%4==3?rnd.next(1000000000LL,10000000000LL):rnd.next((long long int)1e12,(long long int)1e13));
 	cout<<n<<' '<<c<<'\n';
 	for(int i=0;i<n;i++){
 		if(subtask==3)cout<<1<<" \n"[i==n-1];
