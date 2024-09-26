@@ -8,7 +8,7 @@ int main(int argc, char* argv[]) {
 	int n, q;
 	if(subtask==1) n=500, q=500;
 	else if(subtask==5) n=1000000, q=1000000;
-	else n=5000000, q=5000000;
+	else n=4000000, q=4000000;
 	cout << n << ' ' << q << "\n";
 	
 	vector<int> v;
@@ -128,12 +128,12 @@ int main(int argc, char* argv[]) {
 				if(i%7<=4){
 					int l = rnd.next(1, n);
 					int r = l;
-					int k = rnd.next(1, 100000);
+					int k = rnd.next(50000, 100000);
 				}else if(i%7==5){
 					int cc = n/10;
 					int l = rnd.next(1, c);
 					int r = rnd.next(n-c, n);
-					int k = rnd.next(10000, 100000);
+					int k = rnd.next(50000, 100000);
 				}else if(i%7==6){
 					int l = rnd.next(1, n);
 					int r = n;
