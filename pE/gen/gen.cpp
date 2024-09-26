@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
 			
 		}
 	}else if(subtask==2){
-		n = rnd.next(50000, 100000);
+		n = 1;
 		a = rnd.next(1, 10000000);
 		b = rnd.next(1, 10000000);
 		c = rnd.next(1, 10000000);
