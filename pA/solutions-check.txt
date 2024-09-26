@@ -3,85 +3,85 @@ solution            compile[OK]
 0-01                sol[OK]    0.012     check[OK]        1  [Correct]               
 0-02                sol[OK]    0.012     check[OK]        1  [Correct]               
 1-01                sol[OK]    0.012     check[OK]        1  [Correct]               
-1-02                sol[OK]    0.013     check[OK]        1  [Correct]               
+1-02                sol[OK]    0.012     check[OK]        1  [Correct]               
 1-03                sol[OK]    0.012     check[OK]        1  [Correct]               
-1-04                sol[OK]    0.013     check[OK]        1  [Correct]               
+1-04                sol[OK]    0.012     check[OK]        1  [Correct]               
 1-05                sol[OK]    0.012     check[OK]        1  [Correct]               
-1-06                sol[OK]    0.013     check[OK]        1  [Correct]               
+1-06                sol[OK]    0.012     check[OK]        1  [Correct]               
 1-07                sol[OK]    0.012     check[OK]        1  [Correct]               
-1-08                sol[OK]    0.013     check[OK]        1  [Correct]               
+1-08                sol[OK]    0.012     check[OK]        1  [Correct]               
 1-09                sol[OK]    0.012     check[OK]        1  [Correct]               
 1-10                sol[OK]    0.012     check[OK]        1  [Correct]               
-2-01                sol[FAIL]  2.818     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-2-02                sol[FAIL]  2.844     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-2-03                sol[FAIL]  2.832     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-2-04                sol[FAIL]  2.845     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-2-05                sol[FAIL]  2.855     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-2-06                sol[FAIL]  2.843     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-2-07                sol[FAIL]  2.829     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-2-08                sol[FAIL]  2.809     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-2-09                sol[FAIL]  2.839     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-2-10                sol[FAIL]  2.873     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-3-01                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-3-02                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-3-03                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-3-04                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-3-05                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-3-06                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-3-07                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-3-08                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-3-09                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-3-10                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-4-01                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-4-02                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-4-03                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-4-04                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-4-05                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-4-06                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-4-07                sol[FAIL]  3.007     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-4-08                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-4-09                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-4-10                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-5-01                sol[FAIL]  1.568     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-5-02                sol[FAIL]  1.592     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-5-03                sol[FAIL]  1.623     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-5-04                sol[FAIL]  1.581     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-5-05                sol[FAIL]  1.607     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-5-06                sol[FAIL]  1.587     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-5-07                sol[FAIL]  1.574     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-5-08                sol[FAIL]  1.602     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-5-09                sol[FAIL]  1.597     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-5-10                sol[FAIL]  1.599     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-5-11                sol[FAIL]  1.639     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-5-12                sol[FAIL]  1.623     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-5-13                sol[FAIL]  1.619     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-5-14                sol[FAIL]  1.571     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-5-15                sol[FAIL]  1.589     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
-6-01                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-6-02                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-6-03                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-6-04                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-6-05                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-6-06                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-6-07                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-6-08                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-6-09                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-6-10                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-6-11                sol[FAIL]  3.007     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-6-12                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-6-13                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-6-14                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
-6-15                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
+2-01                sol[OK]    0.683     check[OK]        1  [Correct]               
+2-02                sol[OK]    0.696     check[OK]        1  [Correct]               
+2-03                sol[OK]    0.679     check[OK]        1  [Correct]               
+2-04                sol[OK]    0.683     check[OK]        1  [Correct]               
+2-05                sol[OK]    0.686     check[OK]        1  [Correct]               
+2-06                sol[OK]    0.683     check[OK]        1  [Correct]               
+2-07                sol[OK]    0.673     check[OK]        1  [Correct]               
+2-08                sol[OK]    0.685     check[OK]        1  [Correct]               
+2-09                sol[OK]    0.687     check[OK]        1  [Correct]               
+2-10                sol[OK]    0.683     check[OK]        1  [Correct]               
+3-01                sol[FAIL]  1.820     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+3-02                sol[FAIL]  1.797     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+3-03                sol[FAIL]  1.805     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+3-04                sol[FAIL]  1.817     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+3-05                sol[FAIL]  1.828     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+3-06                sol[FAIL]  1.809     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+3-07                sol[FAIL]  1.832     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+3-08                sol[FAIL]  1.804     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+3-09                sol[FAIL]  1.768     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+3-10                sol[FAIL]  1.777     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+4-01                sol[OK]    0.933     check[OK]        1  [Correct]               
+4-02                sol[OK]    0.996     check[OK]        1  [Correct]               
+4-03                sol[OK]    0.988     check[OK]        1  [Correct]               
+4-04                sol[FAIL]  1.022     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+4-05                sol[OK]    0.985     check[OK]        1  [Correct]               
+4-06                sol[FAIL]  1.003     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+4-07                sol[FAIL]  1.028     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+4-08                sol[OK]    0.948     check[OK]        1  [Correct]               
+4-09                sol[OK]    0.945     check[OK]        1  [Correct]               
+4-10                sol[OK]    0.942     check[OK]        1  [Correct]               
+5-01                sol[OK]    0.672     check[OK]        1  [Correct]               
+5-02                sol[OK]    0.684     check[OK]        1  [Correct]               
+5-03                sol[OK]    0.649     check[OK]        1  [Correct]               
+5-04                sol[OK]    0.676     check[OK]        1  [Correct]               
+5-05                sol[OK]    0.674     check[OK]        1  [Correct]               
+5-06                sol[OK]    0.685     check[OK]        1  [Correct]               
+5-07                sol[OK]    0.699     check[OK]        1  [Correct]               
+5-08                sol[OK]    0.680     check[OK]        1  [Correct]               
+5-09                sol[OK]    0.734     check[OK]        1  [Correct]               
+5-10                sol[OK]    0.708     check[OK]        1  [Correct]               
+5-11                sol[OK]    0.673     check[OK]        1  [Correct]               
+5-12                sol[OK]    0.685     check[OK]        1  [Correct]               
+5-13                sol[OK]    0.681     check[OK]        1  [Correct]               
+5-14                sol[OK]    0.729     check[OK]        1  [Correct]               
+5-15                sol[OK]    0.687     check[OK]        1  [Correct]               
+6-01                sol[FAIL]  1.527     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+6-02                sol[FAIL]  1.522     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+6-03                sol[FAIL]  1.510     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+6-04                sol[FAIL]  1.592     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+6-05                sol[FAIL]  1.569     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+6-06                sol[FAIL]  1.543     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+6-07                sol[FAIL]  1.591     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+6-08                sol[FAIL]  1.501     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+6-09                sol[FAIL]  1.679     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+6-10                sol[FAIL]  1.568     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+6-11                sol[FAIL]  1.552     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+6-12                sol[FAIL]  1.565     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+6-13                sol[FAIL]  1.537     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+6-14                sol[FAIL]  1.532     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
+6-15                sol[FAIL]  1.530     check[SKIP]      0  [Time Limit Exceeded]   solution finished after time limit '1.0', with exit code '0'
 samples             [2/2 tests]    [Correct]             [0/0 pts]      [match with expected]             0-01
 1                   [10/10 tests]  [Correct]             [7/7 pts]      [match with expected]             1-01
-2                   [10/10 tests]  [Time Limit Exceeded] [0/19 pts]     [expected: model_solution]        2-01
+2                   [10/10 tests]  [Correct]             [19/19 pts]    [match with expected]             2-01
 3                   [10/10 tests]  [Time Limit Exceeded] [0/13 pts]     [expected: model_solution]        3-01
-4                   [10/10 tests]  [Time Limit Exceeded] [0/29 pts]     [expected: model_solution]        4-01
-5                   [15/15 tests]  [Time Limit Exceeded] [0/21 pts]     [expected: model_solution]        5-01
+4                   [10/10 tests]  [Time Limit Exceeded] [0/29 pts]     [expected: model_solution]        4-04
+5                   [15/15 tests]  [Correct]             [21/21 pts]    [match with expected]             5-01
 6                   [15/15 tests]  [Time Limit Exceeded] [0/11 pts]     [expected: model_solution]        6-01
 
 Subtask summary
-7/100 pts
+47/100 pts
 
 Finished.
 
