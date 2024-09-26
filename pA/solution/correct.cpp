@@ -21,7 +21,7 @@ pair<lli, lli> sum(int idx){
 	}
 	return tmp;
 }
-lli get(int idx){
+lli get(lli idx){
 	pair<lli, lli> tmp = sum(idx);
 	return (idx+1)*tmp.F-tmp.S;
 }
