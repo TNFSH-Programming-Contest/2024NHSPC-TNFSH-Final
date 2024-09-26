@@ -1,8 +1,8 @@
 {
 	"contest_name": "113學年度資訊學科能力競賽臺南一中校內複選",
 	"problem_label": "C",
-	"name": "114514",
-	"title": "反毒",
+	"name": "Tower",
+	"title": "神魔之塔",
 	"memory_limit": 512,
 	"time_limit": 1.0,
 	"type": "Batch",
