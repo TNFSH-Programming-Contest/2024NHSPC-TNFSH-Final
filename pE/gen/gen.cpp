@@ -21,24 +21,17 @@ int main(int argc, char* argv[]) {
 			}else if(i%3==0){
 				cout << rnd.next(500000, 1000000) << " \n"[i==n];
 			}
-			
 		}
 	}else if(subtask==2){
-		n = 1;
+		n = rnd.next(1000, 100000);
 		a = rnd.next(1, 10000000);
 		b = rnd.next(1, 10000000);
 		c = rnd.next(1, 10000000);
 		d = rnd.next(1, 10000000);
 		cout << n << ' ' << a << ' ' << b << ' ' << c << ' ' << d << endl;
+		int cc = rnd.next(100000000, 1000000000);
 		for(int i=1;i<=n;i++){
-			if(i%3==1){
-				cout << rnd.next(1, 100) << " \n"[i==n];
-			}else if(i%3==2){
-				cout << rnd.next(10000, 1000000) << " \n"[i==n];
-			}else if(i%3==0){
-				cout << rnd.next(100000000, 1000000000) << " \n"[i==n];
-			}
-			
+			cout << cc << " \n"[i==n];
 		}
 	}else{
 		n = 100000;
