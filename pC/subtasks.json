@@ -18,7 +18,7 @@
         "2": {
             "index": 2,
             "score": 29,
-            "text": "對於所有 $1\\le i \\le m$ 都有 $ \\lceil \\frac{n}{2} \\rceil < c_i \\le n$ ",
+            "text": "對於所有 $1\\le i \\le m$ 都有 $ \\frac{n}{2} < c_i \\le n$ ",
             "validators": []
         },
         "3": {
