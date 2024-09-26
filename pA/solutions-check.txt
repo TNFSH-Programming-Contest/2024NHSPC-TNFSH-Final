@@ -1,0 +1,18 @@
+correct.cpp
+solution            compile[OK]
+0-01                sol[OK]    0.012     check[OK]        1  [Correct]               
+1-01                sol[OK]    0.014     check[OK]        1  [Correct]               
+2-01                sol[FAIL]  3.006     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
+3-01                sol[FAIL]  3.007     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
+4-01                sol[FAIL]  3.007     check[SKIP]      0  [Time Limit Exceeded]   solution terminated after hard time limit '3.0'
+samples             [1/1 tests]    [Correct]             [0/0 pts]      [match with expected]             0-01
+1                   [1/1 tests]    [Correct]             [13/13 pts]    [match with expected]             1-01
+2                   [1/1 tests]    [Time Limit Exceeded] [0/26 pts]     [expected: model_solution]        2-01
+3                   [1/1 tests]    [Time Limit Exceeded] [0/42 pts]     [expected: model_solution]        3-01
+4                   [1/1 tests]    [Time Limit Exceeded] [0/19 pts]     [expected: model_solution]        4-01
+
+Subtask summary
+13/100 pts
+
+Finished.
+
