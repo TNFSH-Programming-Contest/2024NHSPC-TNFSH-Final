@@ -7,8 +7,8 @@ int main(int argc, char* argv[]) {
 	int subtask=atoi(argv[1]);
 	int n, q, l, r, k;
 	if(subtask==1) n=500, q=500;
-	else if(subtask==5) n=1000000, q=1000000;
-	else n=5000000, q=1000000;
+	else if(subtask==5) n=500000, q=500000;
+	else n=1000000, q=1000000;
 	cout << n << ' ' << q << "\n";
 	
 	vector<int> v;
