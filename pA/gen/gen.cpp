@@ -11,7 +11,7 @@ int main(int argc, char* argv[]) {
 	cout << n << ' ' << q << "\n";
 	vector<int> v;
 	for(int i=1;i<=n;i++)v.push_back(i);
-	random_shuffle(v.begin(), v.end());
+	std::random_shuffle( v.begin(), v.end() );
 	int it = 0;
 	for(int i=0;i<q;i++){
 		int ch;
@@ -21,15 +21,15 @@ int main(int argc, char* argv[]) {
 			if(ch==2)ch=3;
 		}
 		if(ch==1){
-			int l = rnd.next(1, n);
-			int r = rnd.next(l, n);
+			int l = rnd.next(1LL, n);
+			int r = rnd.next(lLL, n);
 			int k = rnd.next(1, 1000000000);
 			cout << ch << ' ' << l << ' ' << r << ' ' << k << "\n";
 		}else if(ch==2){
 			cout << ch << ' ' << v[it] << "\n";
 			it++;
 		}else{
-			cout << ch << ' ' << rnd.next(1, n) << "\n";
+			cout << ch << ' ' << rnd.next(1LL, n) << "\n";
 		}
 	}
 	return 0;
