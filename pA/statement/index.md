@@ -25,7 +25,7 @@ $3$ $y$
 ## 輸入限制
  - $1 \le n$, $q \le 5\times 10^{6}$
  - $1 \le l \le r \le n$
- - $1 \le k \le 10^{9}$
+ - $1 \le k \le 10^{5}$
  - $1 \le x \le n-1$
  - $1 \le y \le n$
 
