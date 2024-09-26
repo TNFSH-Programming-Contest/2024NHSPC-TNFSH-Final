@@ -1,6 +1,6 @@
 {
     "global_validators": [
-        "validator.cpp"
+        
     ],
     "subtasks": {
         "samples": {
@@ -9,9 +9,21 @@
             "text": "範例輸入輸出",
             "validators": []
         },
-        "full": {
+        "1": {
             "index": 1,
-            "score": 100,
+            "score": 23,
+            "text": "對於所有 $1 \\le i \\le n$ 都有 $1\\le h_i \\le 10^{6}$",
+            "validators": []
+        },
+        "2": {
+            "index": 2,
+            "score": 31,
+            "text": "$l=1$, $r=10^{9}$",
+            "validators": []
+        },
+        "3": {
+            "index": 3,
+            "score": 46,
             "text": "無額外限制",
             "validators": []
         }
