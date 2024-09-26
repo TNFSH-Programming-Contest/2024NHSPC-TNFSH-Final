@@ -18,6 +18,7 @@ int main(int argc, char* argv[]){
 		else if(idx%4==3)c=rnd.next(1000000000LL,10000000000LL);
 		else c=rnd.next((long long int)1e12,(long long int)1e13);
 	}
+	if(c<0)c=1;
 	cout<<n<<' '<<c<<'\n';
 	for(int i=0;i<n;i++){
 		if(subtask==3)cout<<1<<" \n"[i==n-1];
