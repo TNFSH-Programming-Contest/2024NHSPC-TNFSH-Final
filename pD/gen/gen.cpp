@@ -8,7 +8,7 @@ int main(int argc, char* argv[]){
 	registerGen(argc, argv, 1);
     int subtask=atoi(argv[1]),idx=atoi(argv[2]);
 	int n=(subtask==5?3000:subtask==6?800000:100000);
-	long long int c;
+	long long int c=0;
 	if(subtask==1)c=0;
 	else if(subtask==2)c=(idx%2?rnd.next(1,100):rnd.next(100000,1000000));
 	else if(subtask==3||subtask==4)c=1e18;
@@ -18,7 +18,6 @@ int main(int argc, char* argv[]){
 		else if(idx%4==3)c=rnd.next(1000000000LL,10000000000LL);
 		else c=rnd.next((long long int)1e12,(long long int)1e13);
 	}
-	if(c<0)c=1;
 	cout<<n<<' '<<c<<'\n';
 	for(int i=0;i<n;i++){
 		if(subtask==3)cout<<1<<" \n"[i==n-1];
