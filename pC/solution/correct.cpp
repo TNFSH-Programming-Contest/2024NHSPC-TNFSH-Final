@@ -38,7 +38,7 @@ lli get(lli a, lli b){ //gcd(i, a)==b
 int main() {
 	ios_base::sync_with_stdio(0);cin.tie(0);
     cin >> n >> m >> q;
-    sieve(n);mmod=getphi(mod-1);
+    sieve(n);
     for(int i=1;i<=m;i++)cin >> c[i];
     s[0]=s[1]=1;
     for(int i=1;i<=n;i++){
