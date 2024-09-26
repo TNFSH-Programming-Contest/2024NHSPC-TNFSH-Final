@@ -39,6 +39,7 @@ int main(int argc, char* argv[]) {
 				r = n;
 				k = rnd.next(50000, 100000);
 			}
+				cout << ch << ' ' << l << ' ' << r << ' ' << k << endl;
 			}else if(ch==2){
 				cout << ch << ' ' << v[it] << "\n";
 				it++;
