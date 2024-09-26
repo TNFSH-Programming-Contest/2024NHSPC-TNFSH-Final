@@ -30,13 +30,12 @@ void sol(){
 	for(int i=11;i<=lim;i++)dp[i]=min(dp[i], dp[i-11]+a);
 	for(int i=451;i<=lim;i++)dp[i]=min(dp[i], dp[i-451]+b);
 	for(int i=11451;i<=lim;i++)dp[i]=min(dp[i], dp[i-11451]+c);
-
+	for(int i=lim+l+1;i<=lim+r;i++)ms.insert(get(i));
 	for(int i=lim;i>0;i--){
-		if(i+l<=lim)ms.insert(dp[i+l]);
-		if(ms.empty())continue;
+		ms.insert(get(i+l));
 		lli tmp = *ms.begin();
 		dp[i]=min(dp[i], tmp+d);
-		if(i+r<=lim)ms.erase(ms.find(dp[i+r]));
+		ms.erase(ms.find(dp[i+r]));
 	}
 
 	lli ans = 0;
