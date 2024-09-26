@@ -35,7 +35,7 @@ void sol(){
 		ms.insert(get(i+l));
 		lli tmp = *ms.begin();
 		dp[i]=min(dp[i], tmp+d);
-		ms.erase(ms.find(dp[i+r]));
+		ms.erase(ms.find(get(i+r)));
 	}
 
 	lli ans = 0;
