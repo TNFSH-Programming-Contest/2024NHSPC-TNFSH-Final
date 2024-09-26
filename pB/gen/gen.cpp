@@ -1,14 +1,14 @@
 #include "testlib.h"
 #include <bits/stdc++.h>
 using namespace std;
-int way[105],t[15],a[105][15],b[105][15],c[105][15],shufa[105],shufb[15];
+int way[130],t[15],a[130][15],b[130][15],c[130][15],shufa[130],shufb[15];
 inline int randomint(double l,double r){
 	return pow(10.,rnd.next(l,r));
 }
 int main(int argc, char* argv[]){
 	registerGen(argc, argv, 1);
     int subtask=atoi(argv[1]),idx=atoi(argv[2]);
-	int n=(idx%2?rnd.next(1,99):100),m=12,sp=0;
+	int n=(idx%2?rnd.next(1,127):128),m=(subtask==7?12:10),sp=0;
 	cout<<n<<' '<<m<<'\n';
 	for(int i=0;i<n;i++)shufa[i]=i+1;
 	for(int i=0;i<m;i++)shufb[i]=i+1;

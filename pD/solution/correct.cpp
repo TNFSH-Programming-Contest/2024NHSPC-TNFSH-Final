@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-int a[(int)5e5+5];
-long long int v[(int)5e+5];
+int a[(int)8e5+5];
+long long int v[(int)8e+5];
 int main(){
 	cin.tie(0)->sync_with_stdio(0);
 	int n;

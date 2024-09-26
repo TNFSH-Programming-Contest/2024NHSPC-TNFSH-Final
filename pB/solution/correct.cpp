@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
-int way[105],t[15],a[105][15],b[105][15],c[105][15],x[105][15][15],y[105][15][15],z[105][15][15],in[105][15];
-long long int dis[105][15],now[105],ans[105];
-vector<pair<int,int>>out[105];
+int way[130],t[15],a[130][15],b[130][15],c[130][15],x[130][15][15],y[130][15][15],z[130][15][15],in[130][15];
+long long int dis[130][15],now[130],ans[130];
+vector<pair<int,int>>out[130];
 int main(){
 	int n,m;
 	cin>>n>>m;
