@@ -5,7 +5,7 @@ using namespace std;
 int main(int argc, char* argv[]) {
 	registerGen(argc, argv, 1);
 	int subtask=atoi(argv[1]);
-	int n, q;
+	int n, q, l, r, k;
 	if(subtask==1) n=500, q=500;
 	else if(subtask==5) n=1000000, q=1000000;
 	else n=4000000, q=4000000;
@@ -26,18 +26,18 @@ int main(int argc, char* argv[]) {
 			}
 			if(ch==1){
 				if(i%3==0){
-				int l = rnd.next(1, n);
-				int r = l;
-				int k = rnd.next(1, 100000);
+				l = rnd.next(1, n);
+				r = l;
+				k = rnd.next(1, 100000);
 			}else if(i%3==1){
 				int cc = n/10;
-				int l = rnd.next(1, cc);
-				int r = rnd.next(n-cc, n);
-				int k = rnd.next(10000, 100000);
+				l = rnd.next(1, cc);
+				r = rnd.next(n-cc, n);
+				k = rnd.next(10000, 100000);
 			}else if(i%3==2){
-				int l = rnd.next(1, n);
-				int r = n;
-				int k = rnd.next(50000, 100000);
+				l = rnd.next(1, n);
+				r = n;
+				k = rnd.next(50000, 100000);
 			}
 			}else if(ch==2){
 				cout << ch << ' ' << v[it] << "\n";
@@ -49,18 +49,18 @@ int main(int argc, char* argv[]) {
 	}else if(subtask==2){
 		for(int i=0;i<q;i++){
 			if(i%3==0){
-				int l = rnd.next(1, n);
-				int r = l;
-				int k = rnd.next(1, 100000);
+				l = rnd.next(1, n);
+				r = l;
+				k = rnd.next(1, 100000);
 			}else if(i%3==1){
 				int cc = n/10;
-				int l = rnd.next(1, cc);
-				int r = rnd.next(n-cc, n);
-				int k = rnd.next(10000, 100000);
+				l = rnd.next(1, cc);
+				r = rnd.next(n-cc, n);
+				k = rnd.next(10000, 100000);
 			}else if(i%3==2){
-				int l = rnd.next(1, n);
-				int r = n;
-				int k = rnd.next(50000, 100000);
+				l = rnd.next(1, n);
+				r = n;
+				k = rnd.next(50000, 100000);
 			}
 			cout << 1 << ' ' << l << ' ' << r << ' ' << k << "\n";
 		}
@@ -71,18 +71,18 @@ int main(int argc, char* argv[]) {
 			if(ch==2)ch=3;
 			if(ch==1){
 				if(i%3==0){
-					int l = rnd.next(1, n);
-					int r = l;
-					int k = rnd.next(1, 100000);
+					l = rnd.next(1, n);
+					r = l;
+					k = rnd.next(1, 100000);
 				}else if(i%3==1){
 					int cc = n/10;
-					int l = rnd.next(1, c);
-					int r = rnd.next(n-c, n);
-					int k = rnd.next(10000, 100000);
+					l = rnd.next(1, c);
+					r = rnd.next(n-c, n);
+					k = rnd.next(10000, 100000);
 				}else if(i%3==2){
-					int l = rnd.next(1, n);
-					int r = n;
-					int k = rnd.next(50000, 100000);
+					l = rnd.next(1, n);
+					r = n;
+					k = rnd.next(50000, 100000);
 				}
 				cout << ch << ' ' << l << ' ' << r << ' ' << k << "\n";
 			}
@@ -97,18 +97,18 @@ int main(int argc, char* argv[]) {
 			if(it==n-1)ch=1;
 			if(ch==1){
 				if(i%3==0){
-					int l = rnd.next(1, n);
-					int r = l;
-					int k = rnd.next(1, 100000);
+					l = rnd.next(1, n);
+					r = l;
+					k = rnd.next(1, 100000);
 				}else if(i%3==1){
 					int cc = n/10;
-					int l = rnd.next(1, c);
-					int r = rnd.next(n-c, n);
-					int k = rnd.next(10000, 100000);
+					l = rnd.next(1, c);
+					r = rnd.next(n-c, n);
+					k = rnd.next(10000, 100000);
 				}else if(i%3==2){
-					int l = rnd.next(1, n);
-					int r = n;
-					int k = rnd.next(50000, 100000);
+					l = rnd.next(1, n);
+					r = n;
+					k = rnd.next(50000, 100000);
 				}
 				cout << ch << ' ' << l << ' ' << r << ' ' << k << "\n";
 			}else {
@@ -126,18 +126,18 @@ int main(int argc, char* argv[]) {
 			}
 			if(ch==1){
 				if(i%7<=4){
-					int l = rnd.next(1, n);
-					int r = l;
-					int k = rnd.next(50000, 100000);
+					l = rnd.next(1, n);
+					r = l;
+					k = rnd.next(50000, 100000);
 				}else if(i%7==5){
 					int cc = n/10;
-					int l = rnd.next(1, c);
-					int r = rnd.next(n-c, n);
-					int k = rnd.next(50000, 100000);
+					l = rnd.next(1, c);
+					r = rnd.next(n-c, n);
+					k = rnd.next(50000, 100000);
 				}else if(i%7==6){
-					int l = rnd.next(1, n);
-					int r = n;
-					int k = rnd.next(50000, 100000);
+					l = rnd.next(1, n);
+					r = n;
+					k = rnd.next(50000, 100000);
 				}
 				cout << ch << ' ' << l << ' ' << r << ' ' << k << "\n";
 			}else if(ch==2){
