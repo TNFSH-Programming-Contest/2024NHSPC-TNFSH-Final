@@ -10,7 +10,7 @@ pair<lli, lli> p[5];
 bool cmp(pair<lli, lli> a, pair<lli, lli> b){
 	return a.S*b.F>a.F*b.S;
 }
-lli get(int x){
+lli get(lli x){
 	if(x<=lim)return dp[x];
 	lli cal = (x-lim+p[3].F-1)/p[3].F;
 	cal = cal*p[3].S + dp[x-cal*p[3].F];
@@ -30,14 +30,16 @@ void sol(){
 	for(int i=11;i<=lim;i++)dp[i]=min(dp[i], dp[i-11]+a);
 	for(int i=451;i<=lim;i++)dp[i]=min(dp[i], dp[i-451]+b);
 	for(int i=11451;i<=lim;i++)dp[i]=min(dp[i], dp[i-11451]+c);
-	for(int i=lim+l+1;i<=lim+r;i++)ms.insert(get(i));
 	for(int i=lim;i>0;i--){
-		ms.insert(get(i+l));
+		if(i+l<=lim)ms.insert(get(i+l));
+		if(ms.empty())continue;
 		lli tmp = *ms.begin();
 		dp[i]=min(dp[i], tmp+d);
-		ms.erase(ms.find(get(i+r)));
+		if(i+r<=lim)ms.erase(ms.find(get(i+r)));
 	}
-
+	for(int i=11;i<=lim;i++)dp[i]=min(dp[i], dp[i-11]+a);
+	for(int i=451;i<=lim;i++)dp[i]=min(dp[i], dp[i-451]+b);
+	for(int i=11451;i<=lim;i++)dp[i]=min(dp[i], dp[i-11451]+c);
 	lli ans = 0;
 	for(int i=1;i<=n;i++){
 		if(h[i]<=lim){
