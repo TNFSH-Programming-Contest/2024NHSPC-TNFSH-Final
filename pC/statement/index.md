@@ -26,8 +26,8 @@
 - $1\le n, q \le 10^{5}$
 - $1\le m \le 100$
 - $1\le a_i \le b_i \le n$
-- $1\le c_i \le 10^{9}$
-- 
+- $1\le c_i \le n$
+
 ## 子任務
 \subtasks
 
