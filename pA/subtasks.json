@@ -36,7 +36,7 @@
         "5": {
             "index": 5,
             "score": 21,
-            "text": "$1 \le n$, $q \le 10^{6}$",
+            "text": "$1 \\le n$, $q \\le 10^{6}$",
             "validators": []
         },
         "6": {
