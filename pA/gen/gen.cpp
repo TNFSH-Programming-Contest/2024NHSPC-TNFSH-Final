@@ -8,7 +8,7 @@ int main(int argc, char* argv[]) {
 	int n, q, l, r, k;
 	if(subtask==1) n=500, q=500;
 	else if(subtask==5) n=1000000, q=1000000;
-	else n=4000000, q=4000000;
+	else n=5000000, q=1000000;
 	cout << n << ' ' << q << "\n";
 	
 	vector<int> v;
