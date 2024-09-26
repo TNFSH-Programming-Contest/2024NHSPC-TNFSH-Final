@@ -6,20 +6,6 @@ lli n, m, q, mmod;
 lli s[1000005], c[1000005];
 bitset<(lli)1e6+5> np;
 lli p[(lli)1e6+5], phi[(lli)1e6+5];
-lli getphi(lli x){
-    if (x < 2) return 0;
-    lli ret = x;
-    lli sq = sqrt(x);
-    for (lli p=2; p<=sq; p++){
-        if (x % p == 0){
-            while (x % p == 0) x /= p;
-            ret -= ret / p;
-        }
-        if (x == 1) break;
-    }
-    if (x > 1) ret -= ret / x;
-    return ret;
-}
 void sieve(lli n){
     lli cnt = 1;
     for(lli i=2;i<=n;i++){
