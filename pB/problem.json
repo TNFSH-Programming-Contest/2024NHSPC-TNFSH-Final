@@ -3,7 +3,7 @@
 	"problem_label": "B",
 	"name": "HelloMinecraft",
 	"title": "你好我的世界",
-	"memory_limit": 512,
+	"memory_limit": 128,
 	"time_limit": 1.0,
 	"type": "Batch",
 	"description": "",

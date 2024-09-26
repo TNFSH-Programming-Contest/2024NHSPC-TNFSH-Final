@@ -3,7 +3,7 @@
 	"problem_label": "C",
 	"name": "Tower",
 	"title": "神魔之塔",
-	"memory_limit": 512,
+	"memory_limit": 128,
 	"time_limit": 1.0,
 	"type": "Batch",
 	"description": "",
