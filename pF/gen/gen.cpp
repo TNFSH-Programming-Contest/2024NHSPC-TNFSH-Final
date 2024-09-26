@@ -7,6 +7,7 @@ int main(int argc, char* argv[]){
     long long int n;
     if(subtask==1||subtask==2){
         int temp=rnd.next(1,10000000);
+        n=1;
         while(temp--)n=n*2%1000000000039LL;
     }else n=rnd.next(1LL,1000000000038LL);
     if(subtask==1||subtask==3)cout<<n<<' '<<1<<'\n';
