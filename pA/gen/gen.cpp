@@ -11,7 +11,7 @@ int main(int argc, char* argv[]) {
 	cout << n << ' ' << q << "\n";
 	vector<int> v;
 	for(int i=1;i<=n;i++)v.push_back(i);
-	std::random_shuffle( v.begin(), v.end() );
+	shuffle( v.begin(), v.end() );
 	int it = 0;
 	for(int i=0;i<q;i++){
 		int ch;
