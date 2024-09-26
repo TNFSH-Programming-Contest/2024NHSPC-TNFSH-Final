@@ -1,6 +1,6 @@
 {
     "global_validators": [
-        "validator.cpp"
+        
     ],
     "subtasks": {
         "samples": {
@@ -9,9 +9,21 @@
             "text": "範例輸入輸出",
             "validators": []
         },
-        "full": {
+        "1": {
             "index": 1,
-            "score": 100,
+            "score": 17,
+            "text": "$1 \\le n \\le 500$",
+            "validators": []
+        },
+        "2": {
+            "index": 2,
+            "score": 19,
+            "text": "對於所有 $1\\le i \\le m$ 都有 $n/2 < c_i \le n$",
+            "validators": []
+        },
+        "3": {
+            "index": 3,
+            "score": 64,
             "text": "無額外限制",
             "validators": []
         }
