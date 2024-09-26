@@ -17,7 +17,8 @@ void sol(){
 	p[1].S=a;p[2].S=b;p[3].S=c;
 	sort(p+1, p+4, cmp);
 	//cout << p[1].F << " " << p[2].F << " " << p[3].F << endl;
-	cin >> d >> l >> r;
+	cin >> d;
+	l=1, r=11450;
 	for(int i=1;i<=n;i++)cin >> h[i];
 	for(int i=11;i<=lim;i++)dp[i]=min(dp[i], dp[i-11]+a);
 	for(int i=451;i<=lim;i++)dp[i]=min(dp[i], dp[i-451]+b);
