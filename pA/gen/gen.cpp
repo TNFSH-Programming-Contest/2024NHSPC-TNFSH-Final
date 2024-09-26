@@ -22,7 +22,7 @@ int main(int argc, char* argv[]) {
 		}
 		if(ch==1){
 			int l = rnd.next(1LL, n);
-			int r = rnd.next(lLL, n);
+			int r = rnd.next(1LL, n);
 			int k = rnd.next(1, 1000000000);
 			cout << ch << ' ' << l << ' ' << r << ' ' << k << "\n";
 		}else if(ch==2){
