@@ -12,7 +12,7 @@ int main(int argc, char* argv[]) {
 	if(subtask!=2){
 		for(int i=1;i<=m;i++){
 			int c = 1;
-			c=rnd.next(c+1, n-(m-i));
+			c=rnd.next(1, n/2);
 			cout << c << " \n"[i==m];
 		}
 		for(int i=1;i<=q;i++){
