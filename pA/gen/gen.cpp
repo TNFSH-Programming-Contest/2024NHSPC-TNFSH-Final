@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
 	if(subtask==1||subtask==5){
 		for(int i=0;i<q;i++){
 			int ch;
-			if(it!=n-1) ch = rnd.next(1, 3);
+			if(it!=n-2) ch = rnd.next(1, 3);
 			else {
 				ch = rnd.next(1, 2);
 				if(ch==2)ch=3;
@@ -95,7 +95,7 @@ int main(int argc, char* argv[]) {
 		for(int i=0;i<q;i++){
 			int ch;
 			ch = rnd.next(1, 2);
-			if(it==n-1)ch=1;
+			if(it==n-2)ch=1;
 			if(ch==1){
 				if(i%3==0){
 					l = rnd.next(1, n);
@@ -120,7 +120,7 @@ int main(int argc, char* argv[]) {
 	}else if(subtask==6){
 		for(int i=0;i<q;i++){
 			int ch;
-			if(it!=n-1) ch = rnd.next(1, 3);
+			if(it!=n-2) ch = rnd.next(1, 3);
 			else {
 				ch = rnd.next(1, 2);
 				if(ch==2)ch=3;
