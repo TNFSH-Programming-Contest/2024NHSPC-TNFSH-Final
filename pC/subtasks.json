@@ -18,7 +18,7 @@
         "2": {
             "index": 2,
             "score": 29,
-            "text": "保證所有 $c_i$ 滿足 $\\frac{n}{2} c_i \\le n$",
+            "text": "保證所有 $c_i$ 滿足 $\\frac{n}{2} < c_i \\le n$",
             "validators": []
         },
         "3": {
