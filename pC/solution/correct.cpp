@@ -4,6 +4,7 @@ using namespace std;
 const lli mod = 998244353;
 lli n, m, q, mmod;
 lli s[1000005], c[1000005];
+set<lli> ss;
 bitset<(lli)1e6+5> np;
 lli p[(lli)1e6+5], phi[(lli)1e6+5];
 void sieve(lli n){
@@ -39,20 +40,21 @@ int main() {
 	ios_base::sync_with_stdio(0);cin.tie(0);
     cin >> n >> m >> q;
     sieve(n);
-    for(int i=1;i<=m;i++)cin >> c[i];
+    for(int i=1;i<=m;i++){
+        cin >> c[i];
+        ss.insert(c[i]);
+    }
     s[0]=s[1]=1;
     for(int i=1;i<=n;i++){
         lli tmp = 1;
-        for(int j=1;j<=m;j++){
-            tmp=tmp*fastpow(c[j], get(i, c[j]), mod)%mod;
-            //cout << i << " and " << c[j] << " get " << get(i, c[j]) << endl;
+        for(lli it : ss){
+            tmp = tmp * fastpow(it, get(i, it), mod)%mod;
         }
-        //cout << i << " " << tmp << endl;
         s[i]=s[i-1]*tmp%mod;
     }
     for(int i=1;i<=q;i++){
-        int a, b;
-        cin >> a >> b;
-        cout << s[b]*fastpow(s[a-1], mod-2, mod)%mod << endl;
+        int l, r;
+        cin >> l >> r;
+        cout << s[r]*fastpow(s[l-1], mod-2, mod)%mod << endl;
     }
 }
