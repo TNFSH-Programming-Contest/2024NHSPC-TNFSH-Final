@@ -12,7 +12,7 @@ int main(int argc, char* argv[]) {
 	cout << n << ' ' << q << "\n";
 	
 	vector<int> v;
-	for(int i=1;i<=n;i++)v.push_back(i);
+	for(int i=1;i<n;i++)v.push_back(i);
 	shuffle( v.begin(), v.end() );
 	int it = 0;
 	
