@@ -12,13 +12,13 @@
         "1": {
             "index": 1,
             "score": 17,
-            "text": " $1 \\le n \\le 500$ ",
+            "text": "$1 \\le n \\le 500$",
             "validators": []
         },
         "2": {
             "index": 2,
             "score": 29,
-            "text": "對於所有 $1 \\le i \\le m$ 都有 $ \frac{n}{2} < c_i \\le n$ ",
+            "text": "保證所有 $c_i$ 滿足 $\\frac{n}{2} < c_i \\le n$",
             "validators": []
         },
         "3": {
